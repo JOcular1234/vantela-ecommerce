@@ -92,7 +92,9 @@ nav .home-links{
 nav svg{
   fill: var(--color-1);
 }
-
+.van-logo:hover{
+  background-color: var(--back-color);
+}
 .vectors:hover{
   background-color: var(--blue);
   z-index: 1;
@@ -243,6 +245,7 @@ nav .home-link{
 }
 }
 
+
 .bannerDisplay-container{
   padding: 30px;
   margin-top: 70px;
@@ -322,6 +325,7 @@ nav .home-link{
 
 .text4{
   text-align: center;
+  
 }
 
 .shopnow{
@@ -349,6 +353,7 @@ nav .home-link{
   width: 60px;
 }
 }
+
 
 .Frame1{
   width: 100%;
@@ -397,6 +402,14 @@ nav .home-link{
 .shoe1{
   display: flex;
   justify-content: center;
+  overflow: hidden;
+}
+
+.shoe1 img{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.shoe1 img:hover{
+  transform: scale(1.1);
 }
 
 .product-name{
@@ -474,12 +487,13 @@ nav .home-link{
 }
 }
 
+
+
 footer{
   background-color: var(--blue);
 }
 
 .footer-logo{
-  width: 100%;
   display: flex;
   justify-content: space-around;
 }
@@ -589,6 +603,7 @@ footer{
   font-size: 0.6rem;
   font-family: inter;
   font-weight: 600;
+  z-index: 1;
 }
 
 /* SANDALS */
@@ -623,6 +638,9 @@ footer{
   width: 230px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
 }
 
 .sandals-div{
@@ -630,11 +648,26 @@ footer{
   width: 230px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
 .sandals-box{
   display: flex;
   justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Scale the image on hover */
+.sandals-box img:hover {
+  transform: scale(1.1);
+ 
+}
+
+.sandals-box img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .sandals-name{
@@ -696,4 +729,11 @@ footer{
 .juniorseries{
   width: 80%;
   margin: 0 auto;
+}
+
+.sandals-link:active{
+  color: var(--red);
+}
+.sandals-link:visited{
+  color: #800080;
 }
