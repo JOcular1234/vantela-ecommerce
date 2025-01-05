@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet"> 
+    <link href="https://api.fontshare.com/v2/css?f[]=neco@401&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+        <title>Details</title>
+    
+    <style>
+
+    </style>
+</head>
+<body>
+<!-- nav -->
+<nav>
+    <img src="images/vantela.png" alt="" width="100px" class="home-link home-links van-logo">
+       
+
+
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-botton">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </label>
+    <label id="overlay" for="sidebar-active"></label>
+    <div class="links-container">
+        <label for="sidebar-active" class="close-sidebar-botton">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </label>
+
+        <img src="images/vantela.png" alt="" width="100px" class="home-link"> 
+
+        <a href="index.html" class="sandals-link">Home</a>
+        <a href="#" class="sandals-link">Slip On</a>
+        <a href="sandals.html" class="sandals-link"><span >Sandals</span></a>
+        <a href="#" class="sandals-link">Other</a>
+        
+    <div class="icon-div">
+        <img src="images/Vector.png" alt=""     class="vectors">
+        <img src="images/Vector1.png" alt="" class="vectors">
+       
+  
+        <div class="cart-mobile cart-mobiles">
+            <div class="cart" id="cart">
+                <span class="cart-icon"><img src="images/Vector2.png" alt="" class="cart-icon-img"></span>
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </div>
+    </div>
+   
+    </div>
+    
+</nav>
+
+    <div id="shoe-details">
+
+    </div>
+    <div class="load">
+
+    </div>
+
+    <div id="spin">
+       
+        <i class="fa fa-spinner fa-spin fa-3x" aria-hidden="true"></i>
+        </div>
+    <script>
+        // spinner
+        window.addEventListener('load',()=>{
+            let cont = document.getElementById('spin');
+            cont.setAttribute('style','display:none')
+        })            
+
+            let load = document.querySelector('.load');
+         load.innerHTML = `
+         <i class="fa fa-spinner fa-spin fa-3x" aria-hidden="true"></i>
+         `;
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const userId = urlParams.get('id');
+
+
+        let shoeDetails = [
+        {
+            id : 1,
+            disc : 'Disc 60%',
+            img : "/images/shoe3.png",
+            productName : 'Vantela Republic Low Black Natural',
+            price : '159,000',
+        },
+        { id : 2,
+            img : "/images/shoe4.png",
+            productName : 'Vantela New Public <br> White low',
+            price :'299.990',
+            rating : '⭐ 4.5/5'
+
+        },
+        {
+            id : 3,
+            img : "/images/shoe3.png",
+            productName : 'Vantela Republic Low Black Natural',
+            disc : '600,000',
+            price : '205.000',
+        },
+        {
+            id : 4,
+            img : "/images/shoe-black.png",
+            productName : 'Vantela Republic Ethnic Low Black Natural',
+            price : '415.000',
+        },
+        {
+            id : 5,
+            img : "/images/max1.png",
+            disc : 'Disc 30%',
+            productName : 'Vantela Ethnic Low Black <br>Natural',
+            cancelledPrice : '300.000',
+            price : '159,800',
+            rating : '⭐ 4.5/5',
+        },
+        {   id : 6,
+            img : "/images/max2.png",
+            disc : 'Disc 35%',
+            productName : 'Vantela Ethnic Low Black <br>Natural',
+            cancelledPrice : '350.000',
+            price : '181.720',
+            rating : '⭐ 4.5/5'
+        },
+        { id : 7,
+            img : "/images/max3.png",
+            disc : 'Disc 40%',
+
+            productName : 'Vantela Republic Low Black <br>Natural',
+            cancelledPrice : '400.000',
+            price : '195.390',
+            rating : '⭐ 4.5/5'
+        },
+        { id : 8,
+            img : "/images/max4.png",
+            disc : 'Disc 30%',
+            productName : 'Vantela Ethnic Low  Black <br> Natural',
+            cancelledPrice : '450.000',
+            price : '182.390',
+            rating : '⭐ 4.5/5'
+        },
+        {
+            id : 9,
+            img : "/images/sandal.png",
+            productName : 'Vantelas Republic Lower <br> Black Natural',
+            disc : 'Disc 60%',
+            cancelledPrice : '340.000',
+            price : '159,000',
+            rating : '⭐ 4.5/5'
+        },
+        { id : 10,
+            img : "/images/sandals6.png",
+            productName : 'Vantelas Republic Lower <br> Black Natural',
+            disc : 'Disc 50%',
+            cancelledPrice : '420.000',
+            price :'209,000',
+        },
+        {
+            id : 11,
+            img : "/images/sandals13.png",
+            productName : 'Vantelas Republic Lower <br> Black Natural',
+            price : '409,000',
+        },
+        {
+            id : 12,
+            img : "/images/sandals18.png",
+            productName : 'Vantelas Republic Lower <br> Black Natural',
+            price : '144,000',
+        },
+        {
+            id : 13,
+            img : "/images/sandals13.png",
+            productName : "Jackson Clip 1JSs Men's <br> White Black",
+            price : '249.000',
+            rating : '⭐ 4.5/5',
+        },
+        {   id : 14,
+            img : "/images/sandals10.png",
+            productName : "Jackson Clip 2JSA Men’s <br> Sandals - Black",
+            disc : 'Disc 50%',
+            cancelledPrice : '410.000',
+            price : '209,000',
+            rating : '⭐ 4.5/5'
+        },
+        { id : 15,
+            img : "/images/sandals3.png",
+            productName :"Jackson High 3JE Men's <br> Sandals -White",
+            price : '249,000',
+            rating : '⭐ 4.7/5'
+        },
+        { id : 16,
+            img : "/images/sandals5.png",
+            disc : 'Disc 50%',
+            cancelledPrice : '600.000',
+            productName : "Jacksons Ask 6JP Men’s <br> Sandal - Navy",
+            price : '307,000',
+            rating : '⭐ 4.5/5'
+        },
+        {
+            id : 17,
+            img : "/images/sandals2.png",
+            productName : "Jackson Axel Womens jkl<br>Sandals - Almond",
+            price : '159,000',
+            rating : '⭐ 4.5/5',
+        },
+        {   id : 18,
+            img : "/images/sandals7.png",
+            productName : "Jackson Axel Womens jkl<br>Sandals - Almond",
+            disc : 'Disc 50%',
+            cancelledPrice : '410.000',
+            price : '209,000',
+            rating : '⭐ 4.0/5'
+        },
+        { id : 19,
+            img : "/images/sandals14.png",
+            productName : "Jackson Axel Womens jkl<br>Sandals - Almond",
+            price : '209,000',
+            rating : '⭐ 4.0/5'
+        },
+        { id : 20,
+            img : "/images/sandals19.png",
+            productName : "Jackson Axel Womens jkl<br>Sandals - Almond",
+            disc : 'Disc 50%',
+            cancelledPrice : '400.000',
+            price : '209,000',
+            rating : '⭐ 4.0/5'
+        },
+        {
+            id : 21,
+            img : "/images/sandals22.png",
+            productName : "Jackson Aron 2JS Women's Sandals -Navy",
+            price : '175,000',
+            rating : '⭐ 4.5/5',
+        },
+        {   id : 22,
+            img : "/images/sandals11.png",
+            productName : "Jackson Ford 2JS Womens Sandals - Black",
+            price : '199,000',
+            rating : '⭐ 4.5/5'
+        },
+        { id : 23,
+            img : "/images/sandals16.png",
+            productName : "Jackson Ford 2JS Womens Sandals - Black",
+            cancelledPrice : '400.000',
+            price : '209,000',
+            rating : '⭐ 4.5/5'
+        },
+        { id : 24,
+            img : "/images/sandals4.png",
+            productName : "Jackson Cozy 2JST Womens Sandals - Beige",
+            price : '300,000',
+            rating : '⭐ 4.5/5'
+        },
+        {
+            id : 25,
+            img : "/images/sandals9.png",
+            productName : 'Vantela Republic Low<br> Black Natural',
+            price : '199,000',
+            rating : '⭐ 4.6/5',
+        },
+        {   id : 26,
+            img : "/images/sandals8.png",
+            productName : "Jackson Best 1JP Men's <br> Sandals -Black",
+            disc : 'Disc 50%',
+            cancelledPrice : '530.000',
+            price : '263,000',
+            rating : '⭐ 4.0/5'
+        },
+        { id : 27,
+            img : "/images/sandals15.png",
+            productName : 'Jackson Kids- Light <br> Blue White',
+            price : '179,000',
+            rating : '⭐ 4.3/5'
+        },
+        { id : 28,
+            img : "/images/sandals20.png",
+            disc : 'Disc 50%',
+            productName : 'Jackson Kids K 080  Light <br> Blue',
+            cancelledPrice : '400.000',
+            price : '249,000',
+            rating : '⭐ 4.5/5'
+        },
+        {   id : 30,
+            img : "/images/sandals12.png",
+            productName : 'Jackson Kids Art 1JS Boys Sandals - Navy',
+            cancelledPrice : '670.000',
+            price : '390,000',
+            rating : '⭐ 4.0/5'
+        },
+        { id : 31,
+            img : "/images/sandals17.png",
+            productName : 'Jackson Kids Miko 1ZT Brown',
+            price : '263,000',
+            rating : '⭐ 4.5/5'
+        },
+        { id : 32,
+            img : "/images/sandals23.png",
+            productName : 'Jackson Kids Art 1JS Red',
+            price : '209,000',
+            rating : '⭐ 4.0/5'
+        },
+    ];
+console.log(shoeDetails);
+
+    let shoeDetail = shoeDetails.find(u => u.id == userId);
+
+    if(shoeDetail){
+        let getShoeCards = document.getElementById('shoe-details');
+        
+        // <button >${shoeDetail.disc ? `<span class="dis-btn">${shoeDetail.disc}</span>` : ''}</button>
+        getShoeCards.innerHTML = 
+        `
+        
+  <div class="product">
+ 
+    <div class="shoe1-card">
+        <img src="${shoeDetail.img}" alt="">
+        </div>
+        
+        <div class="details-container">
+            
+<div class="share-heart"><span><i class="fa-regular fa-heart"></i></span> <span><i class="fa-solid fa-share-nodes"></i></span></div>
+        <h2 class="product-details-name">${shoeDetail.productName}</h2>
+<p class="cancel-div">${shoeDetail.cancelledPrice ? `<span class="cancelled-price-cart">Rp- ${shoeDetail.cancelledPrice}</span>` : ''}</p>
+        <p class="main-price">Rp ${shoeDetail.price}</p>
+        <p class="rating">   ${shoeDetail.rating ? `<span>${shoeDetail.rating}</span>` : ''}</p>
+                <p class="size-txt">Select a size</p>
+   
+  <button class="buttonSize" onclick="toggleColor(this)">30</button>
+  <button class="buttonSize" onclick="toggleColor(this)">31</button>
+  <button class="buttonSize" onclick="toggleColor(this)">38</button>
+  <button class="buttonSize" onclick="toggleColor(this)">39</button>
+  <button class="buttonSize" onclick="toggleColor(this)">40</button>
+
+
+    <div class="cart-section">
+        <span class="carts-message">
+     <img src="images/mingcutechat.png" alt="" width="30px" height="35px"></span>
+        <button class="add-to-cart-btn" onclick="addToCart()"><span><i class="fa-solid fa-plus"></i></span> Add to Cart</button>
+     
+        <button class="remove-from-cart-btn" onclick="removeFromCart()"><span><i class="fa-solid fa-minus"></i></span> Remove</button> 
+            </div>
+            
+       <p class="btns-carts"><button class="buy-now-btns-carts">Buy Now</button></p>
+
+    </div>
+    </div>
+        <p class="description">Condition: New <br>
+Min. Order: 1 Piece <br>
+Showcase: All Showcase<br>
+Republic Series<br>
+
+GENERAL SPECIFICATIONS<br>
+​color : Black Natural<br>
+size : 36 - 45 (UNISEX) <br>
+
+MATERIALS:<br>
+
+UPPER: 12 oz canvas<br>
+THREAD : nylon<br>
+EYELETS: silver aluminum + ring<br>
+INSOLE: ultralite foam<br>
+FOXING : rubber<br>
+OUTSOLE: rubber<br>
+STRIPE: semi-leather<br>
+
+100% ORIGINAL BNIB item (Brand New in Box).<br>
+NOT ORIGINAL GUARANTEED Money Back.<br>
+
+Size variants are always updated, if the size can be <br> clicked/selected it means READY.<br>
+Using good quality material, very soft, and has strong <br> durability so it is suitable for use every day.<br>
+The insole is soft and safe so that your feet don't <br>get sore easily.<br>
+Good stitching makes shoes look good, strong, safe and <br>durable.<br>
+
+CHART SIZE:<br>
+SIZE 36= 23.3 cm<br>
+SIZE 37= 23.9 cm<br>
+SIZE 38= 24.7 cm<br>
+SIZE 39= 25.2 cm<br>
+SIZE 40= 26.1 cm<br>
+SIZE 41= 26.5 cm<br>
+SIZE 42= 27.4 cm<br>
+SIZE 43= 28.3 cm<br>
+SIZE 44= 28.8 cm<br>
+SIZE 45= 29.3 cm<br>
+MEASUREMENT Method:<br>
+
+Foot length (Hump to Toe) then adjust to the size <br>chart above.<br>
+Not Accepting Change Size,<br>
+THANK YOU for always loving DOMESTIC PRODUCTS.</p>
+
+
+   `
+    }else{
+        getshoeCards = document.getElementById('shoe-details');
+        getshoeCards.innerHTML = `<p>Product not Found. Try refreshing.</p>`
+    };
+
+    let activeButton = null;
+
+function toggleColor(button) {
+  if (activeButton) {
+    activeButton.classList.toggle('active');
+  }
+  button.classList.add('active');
+  activeButton = button;
+};
+
+
+
+let cartCount = 0;
+
+function addToCart() {
+    cartCount++;
+    updateCartCount();
+    console.log(cartCount);
+    
+}
+
+function removeFromCart() {
+    if (cartCount > 0) {
+        cartCount--;
+        updateCartCount();
+        console.log(cartCount);
+        
+    }
+}
+
+
+
+function updateCartCount() {
+    document.getElementById('cart-count').textContent = cartCount;
+}
+
+    </script>
+
+    
+</body>
+</html>

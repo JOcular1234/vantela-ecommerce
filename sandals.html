@@ -1,399 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet">
-<link href="https://api.fontshare.com/v2/css?f[]=neco@401&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<title>Sandals</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet"> 
+    <link href="https://api.fontshare.com/v2/css?f[]=neco@401&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
 </head>
 <body>
     <nav>
-       <img src="images/vantela.png" alt="" width="100px" class="home-link home-links van-logo">
-           
-        <input type="checkbox" id="sidebar-active">
-        <label for="sidebar-active" class="open-sidebar-botton">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-        </label>
-        <label id="overlay" for="sidebar-active"></label>
-        <div class="links-container">
-            <label for="sidebar-active" class="close-sidebar-botton">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-            </label>
+        <img src="images/vantela.png" alt="" width="100px" class="home-link home-links van-logo">
+        
 
-            <img src="images/vantela.png" alt="" width="100px" class="home-link"> 
+         <input type="checkbox" id="sidebar-active">
+         <label for="sidebar-active" class="open-sidebar-botton">
+             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+         </label>
+         <label id="overlay" for="sidebar-active"></label>
+         <div class="links-container">
+             <label for="sidebar-active" class="close-sidebar-botton">
+                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+             </label>
+ 
+             <img src="images/vantela.png" alt="" width="100px" class="home-link"> 
+ 
+             <a href="index.html" class="sandals-link">Home</a>
+             <a href="#" class="sandals-link">Slip On</a>
+             <a href="sandals.html" class="sandals-link"><span >Sandals</span></a>
+             <a href="#" class="sandals-link">Other</a>
+         <div class="icon-div">
+             <img src="images/Vector.png" alt=""     class="vectors">
+             <img src="images/Vector1.png" alt="" class="vectors">
+             
+             <div class="cart-mobile">
+                <div class="cart" id="cart">
+                    <span class="cart-icon "><img src="images/Vector2.png" alt="" class="cart-icon-img" width="20"></span>
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+            </div>
+         </div>
+         <div class="sign-btn">
+             <button class="sign-up-btn">Sign Up</button>
+             <button class="sign-in-btn">Sign In</button>
+         </div>
+         </div>
+     </nav>
+ 
+     <div class="main-search-container">
+         <div class="search-container">
+         <input type="text" class="search-input" placeholder="Search...">
+          <span class="glass"> <i class="fa fa-search"></i></span> 
+       </div>
+     </div>
+ 
+     <div class="popular-container">
+         <p class="mens-text">Men's Sandals</p>
+     </div>
+ 
 
-            <a href="index.html" class="sandals-link">Home</a>
-            <a href="#" class="sandals-link">Slip On</a>
-            <a href="sandals.html" class="sandals-link"><span >Sandals</span></a>
-            <a href="#" class="sandals-link">Other</a>
-        <div class="icon-div">
-            <img src="images/Vector.png" alt=""     class="vectors">
-            <img src="images/Vector1.png" alt="" class="vectors">
-            <img src="images/Vector2.png" alt="" class="vectors">
-        </div>
-        <div class="sign-btn">
-            <button class="sign-up-btn">Sign Up</button>
-            <button class="sign-in-btn">Sign In</button>
-        </div>
-        </div>
-    </nav>
-
-    <div class="main-search-container">
-        <div class="search-container">
-        <input type="text" class="search-input" placeholder="Search...">
-          <i class="fa fa-search"></i> 
-      </div>
+    <div id="user-cards">
+<!-- first box -->
     </div>
-
-    <div class="popular-container">
-        <p class="mens-text">Men's Sandals</p>
-    </div>
-
-    <div class="first-sandals-container">
-        <div class="sandals-div">
-            <button class="dis-btn">Disc 60%</button>
-            <div class="sandals-box">
-                <img src="images/sandal.png" alt="" width="220">
-            </div>
-            <div class="sandals-name">
-                <p class="sandals-name1">Jackson Ask 6JP Men's Sandals -Navy</p>
-                <p class="sandals-price-cancelled">Rp400,000</p>
-                <p class="sandals-main-price">Rp 199.000</p>
-                <p class="ratings">⭐ 4.5/5</p>
-            </div>
-
-        </div>
-        <div class="sandals-div">
-            <button class="dis-btn">Disc 50%</button>
-            <div class="sandals-box">
-                <img src="images/sandals6.png" alt="" width="220">
-            </div>
-            <div class="sandals-name">
-                <p class="sandals-name1">Jackson Best 1JP Men's Sandals -Black</p>
-                <p class="sandals-price-cancelled">Rp400,000</p>
-                <p class="sandals-main-price">Rp 249.000</p>
-                <p class="ratings">⭐ 4.0/5</p>
-            </div>
-
-        </div>
-        <div class="sandals-div">
-            <div class="sandals-box">
-                <img src="images/sandals13.png" alt="" width="220">
-            </div>
-            <div class="sandals-name">
-                <p class="sandals-name1">Jackson Best 2JS Men's Sandals -Brown</p>
-                <p class="sandals-main-price">Rp 249.000</p>
-                <p class="ratings">⭐ 4.2/5</p>
-            </div>
-
-        </div>
-        <div class="sandals-div">
-            <div class="sandals-box">
-                <img src="images/sandals18.png" alt="" width="220">
-            </div>
-            <div class="sandals-name">
-                <p class="sandals-name1">Jackson Ask 1JP Men's Sandals -Black Khaki</p>
-                <p class="sandals-main-price">Rp 199.000</p>
-                <p class="ratings">⭐ 4.2/5</p>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- SECOND-SANDALS CONTAINER -->
-    <div class="first-sandals-container">
-        <div class="sandals-div">
-            <div class="sandals-box">
-                <img src="images/sandals13.png" alt="" width="220">
-            </div>
-            <div class="sandals-name">
-                <p class="sandals-name1">Jackson Clip 1JS Men's Sandals -White Black</p>
-                <p class="sandals-main-price">Rp 249.000</p>
-                <p class="ratings">⭐ 4.5/5</p>
-            </div>
-
-        </div>
-        <div class="sandals-div">
-            <button class="dis-btn">Disc 50%</button>
-            <div class="sandals-box">
-                <img src="images/sandals10.png" alt="" width="220">
-            </div>
-            <div class="sandals-name">
-                <p class="sandals-name1">Jackson 2JSA Men’s Sandals - Black</p>
-                <p class="sandals-price-cancelled">Rp307,000</p>
-                <p class="sandals-main-price">Rp 249.000</p>
-                <p class="ratings">⭐ 4.5/5</p>
-            </div>
-
-        </div>
-        <div class="sandals-div">
-            <div class="sandals-box">
-                <img src="images/sandals3.png" alt="" width="220">
-            </div>
-            <div class="sandals-name">
-                <p class="sandals-name1">Jackson High 3JE Men's Sandals -White</p>
-                <p class="sandals-main-price">Rp 249.000</p>
-                <p class="ratings">⭐ 4.7/5</p>
-            </div>
-
-        </div>
-        <div class="sandals-div">
-            <button class="dis-btn">Disc 50%</button>
-            <div class="sandals-box">
-                <img src="images/sandals5.png" alt="" width="220">
-            </div>
-            <div class="sandals-name">
-                <p class="sandals-name1">Jackson Ask 6JP Men’s  Sandal  - Navy</p>
-                <p class="sandals-price-cancelled">Rp600,000</p>
-                <p class="sandals-main-price">Rp 307.000</p>
-                <p class="ratings">⭐ 4.5/5</p>
-            </div>
-
-        </div>
-    </div>
-
-        <!--MEN'S SANDALS SEE MORE -->
-    <div class="seemore-div">
-    <button class="see-more-btn">See more <span><i class="fa-solid fa-angle-down"></i></span></button>
+<div id="display2">
+<!-- 2nd -->
 </div>
+        <!--MEN'S SANDALS SEE MORE -->
+        <div class="seemore-div">
+            <button class="see-more-btn">See more <span><i class="fa-solid fa-angle-down"></i></span></button>
+        </div>
 
-<!-- WOMEN'S SANDALS SECTION -->
+        <!-- WOMEN'S SANDALS SECTION -->
 
 <div class="popular-container">
     <p class="mens-text">Women's Sandals</p>
 </div>
 
-
-<div class="first-sandals-container">
-    <div class="sandals-div">
-        <div class="sandals-box">
-            <img src="images/sandals2.png" alt="" width="220">
-        </div>
-        <div class="sandals-name">
-            <p class="sandals-name1">Jackson Pose 1JS Womens Sandals - Mocca Maroon</p>
-            <p class="sandals-main-price">Rp 199.000</p>
-            <p class="ratings">⭐ 4.5/5</p>
-        </div>
-
-    </div>
-    <div class="sandals-div">
-        <button class="dis-btn">Disc 40%</button>
-        <div class="sandals-box">
-            <img src="images/sandals7.png" alt="" width="220">
-        </div>
-        <div class="sandals-name">
-            <p class="sandals-name1">Jackson Axel 1JT Womens Sandals - Almond</p>
-            <p class="sandals-price-cancelled">Rp400,000</p>
-            <p class="sandals-main-price">Rp 299.000</p>
-            <p class="ratings">⭐ 4.0/5</p>
-        </div>
-
-    </div>
-    <div class="sandals-div">
-        <div class="sandals-box">
-            <img src="images/sandals14.png" alt="" width="220">
-        </div>
-        <div class="sandals-name">
-            <p class="sandals-name1">Jackson Ask 4JP Womens Sandals - Brown</p>
-            <p class="sandals-main-price">Rp 199.000</p>
-            <p class="ratings">⭐ 4.5/5</p>
-        </div>
-
-    </div>
-    <div class="sandals-div">
-        <button class="dis-btn">Disc 50%</button>
-        <div class="sandals-box">
-            <img src="images/sandals19.png" alt="" width="220">
-        </div>
-        <div class="sandals-name">
-            <p class="sandals-name1">Jackson Flit 2JS Womens Sandals - Black</p>
-            <p class="sandals-price-cancelled">Rp400,000</p>
-            <p class="sandals-main-price">Rp 249.000</p>
-            <p class="ratings">⭐ 4.5/5</p>
-        </div>
-
-    </div>
+<div id="display3">
+<!-- 3th -->
 </div>
 
-<!-- SECOND-SANDALS CONTAINER -->
-<div class="first-sandals-container">
-    <div class="sandals-div">
-        <div class="sandals-box">
-            <img src="images/sandals22.png" alt="" width="220">
-        </div>
-        <div class="sandals-name">
-            <p class="sandals-name1">Jackson Aron 2JS Women's Sandals -Navy</p>
-            <p class="sandals-main-price">Rp 175.000</p>
-            <p class="ratings">⭐ 4.5/5</p>
-        </div>
-
-    </div>
-    <div class="sandals-div">
-        <div class="sandals-box">
-            <img src="images/sandals11.png" alt="" width="220">
-        </div>
-        <div class="sandals-name">
-            <p class="sandals-name1">JJackson Ford 2JS Womens Sandals - Black</p>
-            <p class="sandals-main-price">Rp 199.000</p>
-            <p class="ratings">⭐ 4.5/5</p>
-        </div>
-
-    </div>
-    <div class="sandals-div">
-        <button class="dis-btn">Disc 64%</button>
-        <div class="sandals-box">
-            <img src="images/sandals16.png" alt="" width="220">
-        </div>
-        <div class="sandals-name">
-            <p class="sandals-name1">Jackson Cozy 2JST Womens Sandals - Beige</p>
-            <p class="sandals-price-cancelled">300,000</p>
-            <p class="sandals-main-price">Rp 249.000</p>
-            <p class="ratings">⭐ 4.5/5</p>
-        </div>
-
-    </div>
-    <div class="sandals-div">
-        <div class="sandals-box">
-            <img src="images/sandals4.png" alt="" width="220">
-        </div>
-        <div class="sandals-name">
-            <p class="sandals-name1">Jackson Ask 6JP Men’s  Sandal  - Coffee</p>
-            <p class="sandals-main-price">Rp 175.000</p>
-            <p class="ratings">⭐ 4.5/5</p>
-        </div>
-
-    </div>
+<div id="display4">
+<!-- 4th -->
 </div>
-
     <!--WOMENS SANDALS SEE MORE -->
-<div class="seemore-div">
-<button class="see-more-btn">See more <span><i class="fa-solid fa-angle-down"></i></span></button>
-</div>
+    <div class="seemore-div">
+        <button class="see-more-btn">See more <span><i class="fa-solid fa-angle-down"></i></span></button>
+        </div>
 
-
-<!-- KID'S SANDALS SECTION -->
+        <!-- KID'S SANDALS SECTION -->
 
 <div class="popular-container">
     <p class="mens-text">Kid's Sandals</p>
 </div>
 
-<div class="first-sandals-container">
-    <div class="sandals-div">
-        <div class="sandals-box">
-            <img src="images/sandals9.png" alt="" width="220">
-        </div>
-        <div class="sandals-name">
-            <p class="sandals-name1">Jackson Kids K 080 - Yellow</p>
-            
-            <p class="sandals-main-price">Rp 199.000</p>
-            <p class="ratings">⭐ 4.6/5</p>
-        </div>
+<!-- kids sandals -->
+ <div id="display5">
+<!-- 5th -->
+ </div>
 
-    </div>
-    <div class="sandals-div">
-        <button class="dis-btn">Disc 50%</button>
-        <div class="sandals-box">
-            <img src="images/sandals8.png" alt="" width="220">
-        </div>
-        <div class="sandals-name">
-            <p class="sandals-name1">Jackson Best 1JP Men's Sandals -Black</p>
-            <p class="sandals-price-cancelled">Rp500,000</p>
-            <p class="sandals-main-price">Rp 263.000</p>
-            <p class="ratings">⭐ 4.3/5</p>
-        </div>
+ <div id="display6">
+<!-- 6th -->
+ </div>
 
-    </div>
-    <div class="sandals-div">
-        <div class="sandals-box">
-            <img src="images/sandals15.png" alt="" width="220">
-        </div>
-        <div class="sandals-name">
-            <p class="sandals-name1">Jackson Kids Ask 5JP Girls sandals - Light Blue White/p>
-            <p class="sandals-main-price">Rp 179.000</p>
-            <p class="ratings">⭐ 4.5/5</p>
-        </div>
+<div class="arr-container">
+   <div class="up">
+    <span class="span-icon">&#8679;</span>
+   </div>
+   </div>
 
-    </div>
-    <div class="sandals-div">
-        <button class="dis-btn">Disc 50%</button>
-        <div class="sandals-box">
-            <img src="images/sandals20.png" alt="" width="220">
-        </div>
-        <div class="sandals-name">
-            <p class="sandals-name1">Jackson Kids K 080 Light Blue</p>
-            <p class="sandals-price-cancelled">Rp400,000</p>
-            <p class="sandals-main-price">Rp 249.000</p>
-            <p class="ratings">⭐ 4.5/5</p>
-        </div>
-
-    </div>
-</div>
-
-<!-- SECOND-SANDALS CONTAINER -->
-<div class="first-sandals-container">
-    <div class="sandals-div">
-        <div class="sandals-box">
-            <img src="images/sandals5.png" alt="" width="220">
-        </div>
-        <div class="sandals-name">
-            <p class="sandals-name1">Jackson Kids Ask 5JP Black Tane</p>
-            <p class="sandals-main-price">Rp 179.000</p>
-            <p class="ratings">⭐ 4.9/5</p>
-        </div>
-
-    </div>
-    <div class="sandals-div">
-        <button class="dis-btn">Disc 56%</button>
-        <div class="sandals-box">
-            <img src="images/sandals12.png" alt="" width="220">
-        </div>
-        <div class="sandals-name">
-            <p class="sandals-name1">Jackson Kids Art 1JS Boys Sandals - Navy </p>
-            <p class="sandals-price-cancelled">390,000</p>
-            <p class="sandals-main-price">Rp 175.000</p>
-            <p class="ratings">⭐ 4.3/5</p>
-        </div>
-
-    </div>
-    <div class="sandals-div">
-        <div class="sandals-box">
-            <img src="images/sandals17.png" alt="" width="220">
-        </div>
-        <div class="sandals-name">
-            <p class="sandals-name1">Jackson Kids Miko 1ZT Brown</p>
-            <p class="sandals-main-price">Rp 263.000</p>
-            <p class="ratings">⭐ 4.5/5</p>
-        </div>
-
-    </div>
-    <div class="sandals-div">
-        <div class="sandals-box">
-            <img src="images/sandals23.png" alt="" width="220">
-        </div>
-        <div class="sandals-name">
-            <p class="sandals-name1">Jackson Kids Art 1JS Red</p>
-          
-            <p class="sandals-main-price">Rp 175.000</p>
-            <p class="ratings">⭐ 4.0/5</p>
-        </div>
-
-    </div>
-</div>
-
-    <!--MEN'S SANDALS SEE MORE -->
+     <!--MEN'S SANDALS SEE MORE -->
 <div class="seemore-div">
-<button class="see-more-btn">See more <span><i class="fa-solid fa-angle-down"></i></span></button>
-</div>
+    <button class="see-more-btn">See more <span><i class="fa-solid fa-angle-down"></i></span></button>
+    </div>
 
+    
     <footer>
         <div class="footer-logo">
             <p class="vantela-logo">Vantela</p>
@@ -435,6 +165,425 @@
         <div class="copyright">
             <p class="right">Copyright &copy; 2024. All Right Reserved</p>
         </div>
-        </footer>    
+        </footer>
+    <script>
+    let shoeDetails = [
+        {
+            id : 9,
+            img : "/images/sandal.png",
+            productName : 'Vantelas Republic Lower <br> Black Natural',
+            disc : 'Disc 60%',
+            cancelledPrice : '340.000',
+            price : '159,000',
+            rating : '⭐ 4.5/5'
+        },
+        { id : 10,
+            img : "/images/sandals6.png",
+            productName : 'Vantelas Republic Lower <br> Black Natural',
+            disc : 'Disc 50%',
+            cancelledPrice : '420.000',
+            price :'209,000',
+        },
+        {
+            id : 11,
+            img : "/images/sandals13.png",
+            productName : 'Vantelas Republic Lower <br> Black Natural',
+            price : '409,000',
+        },
+        {
+            id : 12,
+            img : "/images/sandals18.png",
+            productName : 'Vantelas Republic Lower <br> Black Natural',
+            price : '144,000',
+        },
+        
+    ];
+    console.log(shoeDetails);
+    let shoeCard = document.getElementById('user-cards');
+    
+    shoeDetails.forEach(shoeDetail => {
+        
+        const card = document.createElement('div');
+
+        card.innerHTML += `
+        
+        <div class="shoe-container">
+
+    <div class="first-shoe-container1">
+        <button >${shoeDetail.disc ? `<span class="dis-btn">${shoeDetail.disc}</span>` : ''}</button>
+        <div class="shoe2">
+            <img src="${shoeDetail.img}" alt="" width="200">
+        </div>
+        <div class="product-name">
+            <p class="name">${shoeDetail.productName}</p>
+            <p class="cancel-div">${shoeDetail.cancelledPrice ? `<span class="cancelled-price">Rp- ${shoeDetail.cancelledPrice}</span>` : ''}</p>
+            <p class="price">Rp ${shoeDetail.price}</p>
+            <p class="rating">   ${shoeDetail.rating ? `<span>${shoeDetail.rating}</span>` : ''}</p>
+        </div>
+    </div>
+</div>
+        `
+
+        card.addEventListener('click', ()=>{
+            window.open(`productDetails.html?id=${shoeDetail.id}`, '_blank')
+        });
+let display = document.getElementById('display');
+        shoeCard.appendChild(card)
+    });
+
+
+// second line
+const secondShoeDetails = [
+        {
+            id : 13,
+            img : "/images/sandals13.png",
+            productName : "Jackson Clip 1JSs Men's <br> White Black",
+            price : '249.000',
+            rating : '⭐ 4.5/5',
+        },
+        {   id : 14,
+            img : "/images/sandals10.png",
+            productName : "Jackson Clip 2JSA Men’s <br> Sandals - Black",
+            disc : 'Disc 50%',
+            cancelledPrice : '410.000',
+            price : '209,000',
+            rating : '⭐ 4.5/5'
+        },
+        { id : 15,
+            img : "/images/sandals3.png",
+            productName :"Jackson High 3JE Men's <br> Sandals -White",
+
+            price : '249,000',
+            rating : '⭐ 4.7/5'
+        },
+        { id : 16,
+            img : "/images/sandals5.png",
+            disc : 'Disc 50%',
+            cancelledPrice : '600.000',
+            productName : "Jacksons Ask 6JP Men’s <br> Sandal - Navy",
+            price : '307,000',
+            rating : '⭐ 4.5/5'
+        },
+];
+
+let secondShoe = document.getElementById('second-shoe-container');
+    
+secondShoeDetails.forEach(secondShoeDetail => {
+        console.log(secondShoeDetail);
+  
+        const cards = document.createElement('div');
+        let  display2 = document.getElementById('display2');
+
+        cards.innerHTML += `
+        
+<div class="shoe-container">
+
+    <div class="first-shoe-container1">
+        <button >${secondShoeDetail.disc ? `<span class="dis-btn">${secondShoeDetail.disc}</span>` : ''}</button>
+        <div class="shoe2">
+            <img src="${secondShoeDetail.img}" alt="" width="200">
+        </div>
+        <div class="product-name">
+            <p class="name">${secondShoeDetail.productName}</p>
+            <p class="cancel-div">${secondShoeDetail.cancelledPrice ? `<span class="cancelled-price">Rp- ${secondShoeDetail.cancelledPrice}</span>` : ''}</p>
+            <p class="price">Rp ${secondShoeDetail.price}</p>
+            <p class="rating">   ${secondShoeDetail.rating ? `<span>${secondShoeDetail.rating}</span>` : ''}</p>
+
+        </div>
+    </div>
+</div>
+        `
+
+        cards.addEventListener('click', ()=>{
+            window.open(`productDetails.html?id=${secondShoeDetail.id}`, '_blank')
+        });
+        display2.appendChild(cards)
+    });
+
+// WOMEN SECTION
+
+const womenShoe = [
+        {
+            id : 17,
+            img : "/images/sandals2.png",
+            productName : "Jackson Axel Womens jkl<br>Sandals - Almond",
+            price : '159,000',
+            rating : '⭐ 4.5/5',
+        },
+        {   id : 18,
+            img : "/images/sandals7.png",
+            productName : "Jackson Axel Womens jkl<br>Sandals - Almond",
+            disc : 'Disc 50%',
+            cancelledPrice : '410.000',
+            price : '209,000',
+            rating : '⭐ 4.0/5'
+        },
+        { id : 19,
+            img : "/images/sandals14.png",
+            productName : "Jackson Axel Womens jkl<br>Sandals - Almond",
+            price : '209,000',
+            rating : '⭐ 4.0/5'
+        },
+        { id : 20,
+            img : "/images/sandals19.png",
+            productName : "Jackson Axel Womens jkl<br>Sandals - Almond",
+            disc : 'Disc 50%',
+            cancelledPrice : '400.000',
+            price : '209,000',
+            rating : '⭐ 4.0/5'
+        },
+];
+
+    
+womenShoe.forEach(womenShoe => {
+        console.log(womenShoe);
+  
+        const cards = document.createElement('div');
+        let  display3 = document.getElementById('display3');
+
+        cards.innerHTML += `
+        
+<div class="shoe-container">
+
+    <div class="first-shoe-container1">
+        <button >${womenShoe.disc ? `<span class="dis-btn">${womenShoe.disc}</span>` : ''}</button>
+        <div class="shoe2">
+            <img src="${womenShoe.img}" alt="" width="200">
+        </div>
+        <div class="product-name">
+            <p class="name">${womenShoe.productName}</p>
+            <p class="cancel-div">${womenShoe.cancelledPrice ? `<span class="cancelled-price">Rp- ${womenShoe.cancelledPrice}</span>` : ''}</p>
+            <p class="price">Rp ${womenShoe.price}</p>
+            <p class="rating">   ${womenShoe.rating ? `<span>${womenShoe.rating}</span>` : ''}</p>
+
+        </div>
+    </div>
+</div>
+        `
+
+        cards.addEventListener('click', ()=>{
+            window.open(`productDetails.html?id=${womenShoe.id}`, '_blank')
+        });
+        display3.appendChild(cards)
+    });
+const womenSandals = [
+        {
+            id : 21,
+            img : "/images/sandals22.png",
+            productName : "Jacksons Arones  Women's <br> Sandals -Navy",
+            price : '175,000',
+            rating : '⭐ 4.5/5',
+        },
+        {   id : 22,
+            img : "/images/sandals11.png",
+            productName : "Jackson Fordesc Womens <br>Sandals - Black",
+            price : '199,000',
+            rating : '⭐ 4.5/5'
+        },
+        { id : 23,
+            img : "/images/sandals16.png",
+            productName : "Jackson Ford Womens me<br> Sandals - Black",
+            disc : 'Disc 60%',
+            cancelledPrice : '400.000',
+            price : '209,000',
+            rating : '⭐ 4.5/5'
+        },
+        { id : 24,
+            img : "/images/sandals4.png",
+            productName : "Jackson Cozy kj Womens <br>Sandals - Beige",
+            price : '300,000',
+            rating : '⭐ 4.5/5'
+        },
+];
+
+// women2
+
+    
+womenSandals.forEach(womenSandal => {
+        console.log(womenSandal);
+  
+        const cards = document.createElement('div');
+        let  display4 = document.getElementById('display4');
+
+        cards.innerHTML += `
+        
+<div class="shoe-container">
+
+    <div class="first-shoe-container1">
+        <button >${womenSandal.disc ? `<span class="dis-btn">${womenSandal.disc}</span>` : ''}</button>
+        <div class="shoe2">
+            <img src="${womenSandal.img}" alt="" width="200">
+        </div>
+        <div class="product-name">
+            <p class="name">${womenSandal.productName}</p>
+            <p class="cancel-div">${womenSandal.cancelledPrice ? `<span class="cancelled-price">Rp- ${womenSandal.cancelledPrice}</span>` : ''}</p>
+            <p class="price">Rp ${womenSandal.price}</p>
+            <p class="rating">   ${womenSandal.rating ? `<span>${womenSandal.rating}</span>` : ''}</p>
+
+        </div>
+    </div>
+</div>
+        `
+
+        cards.addEventListener('click', ()=>{
+            window.open(`productDetails.html?id=${womenSandal.id}`, '_blank')
+        });
+        display4.appendChild(cards)
+    });
+
+
+    // FOR KID SHOE
+const kidSandals = [
+        {
+            id : 25,
+            img : "/images/sandals9.png",
+            productName : 'Vantela Republic Low<br> Black Natural',
+            price : '199,000',
+            rating : '⭐ 4.6/5',
+        },
+        {   id : 26,
+            img : "/images/sandals8.png",
+            productName : "Jackson Best 1JP Men's <br> Sandals -Black",
+            disc : 'Disc 50%',
+            cancelledPrice : '530.000',
+            price : '263,000',
+            rating : '⭐ 4.0/5'
+        },
+        { id : 27,
+            img : "/images/sandals15.png",
+            productName : 'Jackson Kids- Light <br> Blue White',
+            price : '179,000',
+            rating : '⭐ 4.3/5'
+        },
+        { id : 28,
+            img : "/images/sandals20.png",
+            disc : 'Disc 50%',
+            productName : 'Jackson Kids K 080  Light <br> Blue',
+            cancelledPrice : '400.000',
+            price : '249,000',
+            rating : '⭐ 4.5/5'
+        },
+];
+
+// let womenShoes = document.getElementById('second-shoe-container');
+    
+kidSandals.forEach(kidSandals => {
+        console.log(kidSandals);
+  
+        const cards = document.createElement('div');
+        let  display5 = document.getElementById('display5');
+
+        cards.innerHTML += `
+        
+<div class="shoe-container">
+
+    <div class="first-shoe-container1">
+        <button >${kidSandals.disc ? `<span class="dis-btn">${kidSandals.disc}</span>` : ''}</button>
+        <div class="shoe2">
+            <img src="${kidSandals.img}" alt="" width="200">
+        </div>
+        <div class="product-name">
+            <p class="name">${kidSandals.productName}</p>
+            <p class="cancel-div">${kidSandals.cancelledPrice ? `<span class="cancelled-price">Rp- ${kidSandals.cancelledPrice}</span>` : ''}</p>
+            <p class="price">Rp ${kidSandals.price}</p>
+            <p class="rating">${kidSandals.rating}</p>
+
+        </div>
+    </div>
+</div>
+        `
+
+        cards.addEventListener('click', ()=>{
+            window.open(`productDetails.html?id=${kidSandals.id}`, '_blank')
+        });
+        display5.appendChild(cards)
+    });
+
+
+    // KID SANDALS 2
+const secondKidSandals = [
+        {
+            id : 29,
+            img : "/images/sandals5.png",
+            productName : 'Jackson Kids Ask 5JP <br> Black Tane',
+            price : '159,000',
+            rating : '⭐ 4.5/5',
+        },
+        {   id : 30,
+            img : "/images/sandals12.png",
+            disc : 'Disc 50%',
+            productName : 'Jackson Kids Art <br> 1JS Boys Sandals - Navy',
+            cancelledPrice : '670.000',
+            price : '390,000',
+            rating : '⭐ 4.0/5'
+        },
+        { id : 31,
+            img : "/images/sandals17.png",
+            productName : 'Jackson Kids Miko <br> 1ZT Brown',
+            price : '263,000',
+            rating : '⭐ 4.5/5'
+        },
+        { id : 32,
+            img : "/images/sandals23.png",
+            productName : 'Jackson Kids Art <br> 1JS Red',
+            price : '209,000',
+            rating : '⭐ 4.0/5'
+        },
+];
+
+// kids sandal 2
+
+    
+secondKidSandals.forEach(secondKidSandal => {
+        console.log(secondKidSandal);
+  
+        const cards = document.createElement('div');
+        let  display6 = document.getElementById('display6');
+
+        cards.innerHTML += `
+        
+<div class="shoe-container">
+
+    <div class="first-shoe-container1">
+        <button >${secondKidSandal.disc ? `<span class="dis-btn">${secondKidSandal.disc}</span>` : ''}</button>
+        <div class="shoe2">
+            <img src="${secondKidSandal.img}" alt="" width="200">
+        </div>
+        <div class="product-name">
+            <p class="name">${secondKidSandal.productName}</p>
+            <p class="cancel-div">${secondKidSandal.cancelledPrice ? `<span class="cancelled-price">Rp- ${secondKidSandal.cancelledPrice}</span>` : ''}</p>
+            <p class="price">Rp ${secondKidSandal.price}</p>
+            <p class="rating">${secondKidSandal.rating}</p>
+
+        </div>
+    </div>
+</div>
+        `
+
+        cards.addEventListener('click', ()=>{
+            window.open(`productDetails.html?id=${secondKidSandal.id}`, '_blank')
+        });
+        display6.appendChild(cards)
+    });
+    let returnUp = document.querySelector('.up')
+
+window.addEventListener('scroll', ()=>{
+    if(window.scrollY > 1600){
+        returnUp.style.display = 'block';
+    }else{
+        returnUp.style.display = 'none'
+   
+    }
+    console.log(window.scrollY);
+    
+});
+
+returnUp.addEventListener('click', ()=>{
+    window.scrollTo({
+        top:20,
+        behavior: 'smooth'
+    });
+});
+</script>
 </body>
 </html>

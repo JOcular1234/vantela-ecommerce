@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet"> 
@@ -13,230 +13,313 @@
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 <title>Home</title>
-<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
 </head>
 <body>
-    <nav>
-        <img src="images/vantela.png" alt="" width="100px" class="home-link home-links van-logo">
-           
-        <input type="checkbox" id="sidebar-active">
-        <label for="sidebar-active" class="open-sidebar-botton">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+<!-- nav -->
+<nav>
+    <img src="images/vantela.png" alt="" width="100px" class="home-link home-links van-logo">
+       
+  
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-botton">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </label>
+    <label id="overlay" for="sidebar-active"></label>
+    <div class="links-container">
+        <label for="sidebar-active" class="close-sidebar-botton">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
         </label>
-        <label id="overlay" for="sidebar-active"></label>
-        <div class="links-container">
-            <label for="sidebar-active" class="close-sidebar-botton">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-            </label>
 
-            <img src="images/vantela.png" alt="" width="100px" class="home-link"> 
+        <img src="images/vantela.png" alt="" width="100px" class="home-link"> 
 
-            <a href="index.html" class="sandals-link">Home</a>
-            <a href="#" class="sandals-link">Slip On</a>
-            <a href="sandals.html" class="sandals-link"><span >Sandals</span></a>
-            <a href="#" class="sandals-link">Other</a>
-            
-        <div class="icon-div">
-            <img src="images/Vector.png" alt=""     class="vectors">
-            <img src="images/Vector1.png" alt="" class="vectors">
-            <img src="images/Vector2.png" alt="" class="vectors">
-        </div>
-        <div class="sign-btn">
-            <button class="sign-up-btn">Sign Up</button>
-            <button class="sign-in-btn">Sign In</button>
-        </div>
-        </div>
+        <a href="index.html" class="sandals-link">Home</a>
+        <a href="#" class="sandals-link">Slip On</a>
+        <a href="sandals.html" class="sandals-link"><span >Sandals</span></a>
+        <a href="#" class="sandals-link">Other</a>
         
-    </nav>
+    <div class="icon-div">
+        <img src="images/Vector.png" alt=""     class="vectors" width="20" height="30">
+        <img src="images/Vector1.png" alt="" class="vectors" width="20" height="30">
+        
+        <div class="cart-mobile cart-mobiles">
+            <div class="cart" id="cart">
+                <span class="cart-icon"><img src="images/Vector2.png" alt="" class="cart-icon-img"></span>
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </div>
+    </div>
+    <div class="sign-btn">
+        <button class="sign-up-btn">Sign Up</button>
+        <button class="sign-in-btn">Sign In</button>
+    </div>
+    </div>
+    
+</nav>
 <div class="main-search-container">
-    <div class="search-container">
-    <input type="text" class="search-input" placeholder="Search...">
-      <i class="fa fa-search"></i> 
-  </div>
+<div class="search-container">
+<input type="text" class="search-input" placeholder="Search...">
+  <i class="fa fa-search"></i> 
+</div>
 </div>
 
 <div class="bannerDisplay-container">
-    <div class="inner-first-display">
-         <p class="text4">Vantela</p>
-        <p class="text2">PUBLIC HIGH <span class="natural">GUM NATURAL</span></p>
-        <p class="text3">It was popularised in the 1960s with the release of Letraset sheets co    ntaining <br> Lorem Ipsum passages, and more recently with desktop publishing</p>
-        </div>
-        <div class="shoe-btn">
-        <div class="shop-btns">
-        <button class="shopnow">Shop Now</button>
+<div class="inner-first-display">
+     <p class="text4">Vantela</p>
+    <p class="text2">PUBLIC HIGH <span class="natural">GUM NATURAL</span></p>
+    <p class="text3">It was popularised in the 1960s with the release of Letraset sheets co    ntaining <br> Lorem Ipsum passages, and more recently with desktop publishing</p>
     </div>
-    <div class="tim" >
-    <img src="images/timberland.png" alt="" width="400" class="timberland">
-    </div>
+    <div class="shoe-btn">
+    <div class="shop-btns">
+    <button class="shopnow">Shop Now</button>
+</div>
+<div class="tim" >
+<img src="images/timberland.png" alt="" width="400" class="timberland">
 </div>
 </div>
-
-<div class="popular-container">
-    <p class="text1">Most Popular</p>
-</div>
-
-<div class="shoe-container">
-    <div class="first-shoe-container1">
-        <div class="shoe1">
-            <img src="images/shoe3.png" alt="" width="200">
-        </div>
-    
-        <div class="product-name">
-            <p class="name">Vantela Republic Low <br>
-                Black Natural</p>
-            <p class="price">Rp 159.000</p>
-        </div>
-        
-    
-    </div>
-   
-         <div class="first-shoe-container">
-        <div class="shoe1">
-            <img src="images/shoe4.png" alt="" width="200">
-        </div>
-        
-        <div class="product-name">
-            <p class="name">Vantela New Public <br>
-                White low</p>
-                <p  class="price">Rp 299.990</p>
-                <P  class="rating">⭐ 4.5/5</P>
-                <button class="shop1">Shop Now</button>
-
-        </div>
-    </div>
-
-    <div class="first-shoe-container1">
-        <div class="shoe1">
-            <img src="images/shoe3.png" alt="" width="200">
-        </div>
-        <div class="product-name">
-            <p class="name">Vantela Public Low 
-                Black Natural</p>
-                <p class="price">Rp 205.000</p>
-        </div>
-        
-    </div>
-
-    <div class="first-shoe-container1">
-        <div class="shoe1">
-            <img src="images/shoe-black.png" alt="" width="200">
-        </div>
-        <div class="product-name">
-            <p class="name">Vantela Ethnic Low 
-                Black Natural</p>
-                <p class="price">Rp 415.000</p>
-        </div>
-    </div>
 </div>
 
 <div class="popular-container">
-    <p class="text1">On sale</p>
+<p class="text1">Most Popular</p>
 </div>
-<!-- SECOND SHOE CONTAINER -->
-<div class="shoe-container">
-    <div class="first-shoe-container">
-        <button class="dis-btn">Disc 50%</button>
-        <div class="shoe1">
-            <img src="images/max1.png" alt="" width="200">
-        </div>
 
-        <div class="product-name">
-            <p class="name">Vantela Ethnic Low 
-                Black Natural</p>
-            <p class="price">Rp 159.800</p>
-            <P  class="rating">⭐ 4.5/5</P>
-            <button class="shop1">Shop Now</button>
-        </div>
-        
-    
+
+    <div id="user-cards">
+
     </div>
+
    
-         <div class="first-shoe-container1">
-        <button class="dis-btn">Disc 35%</button>
+    <div id="displays">
 
-        <div class="shoe1">
-            <img src="images/max2.png" alt="" width="200">
-        </div>
-        
-        <div class="product-name">
-            <p class="name">Vantela Ethnic Low 
-                Black Natural</p>
-                <p  class="price">Rp 181.720</p>
-        </div>
     </div>
-
-    <div class="first-shoe-container1">
-        <button class="dis-btn">Disc 30%</button>
-
-        <div class="shoe1">
-            <img src="images/max3.png" alt="" width="200">
-        </div>
-        <div class="product-name">
-            <p class="name">Vantela Public Low 
-                Black Natural</p>
-                <p class="price">Rp 195.390</p>
-        </div>
-        
+    <div class="popular-container">
+        <p class="text1">On sale</p>
     </div>
+<div class="second-shoe-container">
 
-    <div class="first-shoe-container1">
-        <button class="dis-btn">Disc 30%</button>
-
-        <div class="shoe1">
-            <img src="images/max4.png" alt="" width="200">
-        </div>
-        <div class="product-name">
-            <p class="name">Vantela Ethnic Low 
-                Black Natural</p>
-                <p class="price">Rp 182.390</p>
-        </div>
-    </div>
 </div>
+<div id="display2">
+
+</div>
+<div id="shoe-details">
+
+</div>
+
 <div class="juniorseries">
     <img src="images/juniorseries.png" alt="" width="100%">
 </div>
-
+<div class="arr-container">
+    <div class="up">
+     <span class="span-icon">&#8679;</span>
+    </div>
+    </div>
 <footer>
-<div class="footer-logo">
-    <p class="vantela-logo">Vantela</p>
-    <span class="input-div">
-    <input type="email" placeholder="Subscribe to our Newsletter..." class="newsletter-input" required>
-    <i class="fa-solid fa-angle-right" id="forward"></i>
-    </span>
-</div>
+    <div class="footer-logo">
+        <p class="vantela-logo">Vantela</p>
+        <span class="input-div">
+        <input type="email" placeholder="Subscribe to our Newsletter..." class="newsletter-input" required>
+        <i class="fa-solid fa-angle-right" id="forward"></i>
+        </span>
+    </div>
+  
+    <div class="footer-div">
+    <div>
+             <p class="footer-title">Company</p>
+             <p class="footer-text"><a href="">About Us</p>
+             <p class="footer-text"><a href="">Our Store</p>
+             <p class="footer-text"><a href="">News</p>
+    </div>
+         
+        <div >
+            <p class="footer-title">Help</p>
+            <p class="footer-text"><a href="#">FAQ</a></p>
+            <p class="footer-text"><a href="#">Help</a></p>
+            <p class="footer-text"><a href="#">Terms</a></p>
+    </div>
+    
+        <div>
+            <p class="footer-title">Social Media</p>
+            <p class="footer-text"><a href="#"> <i class="fa-brands fa-facebook" id="icon"></i> Facebook </a></p>
+            <p class="footer-text"><a href="#"><i class="fa-brands fa-tiktok" id="icon"></i> Tiktok </a></p>
+            <p class="footer-text"><a href="#"><i class="fa-brands fa-instagram" id="icon"></i> Instagram </a></p>
+        </div>
+    
+        <div>
+            <p class="footer-title">Contact</p>
+            <p class="footer-text">KinPlusz, Christore Complex, Ado-Ekiti</p>
+            <p class="footer-text">Phone: 07019222397</p>
+            <p class="footer-text">Mail:<a href="mailto:adminvantela@gmail.com">adminvantela@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="right">Copyright &copy; 2024. All Right Reserved</p>
+    </div>
+    </footer>
+<script>
+    let shoeDetails = [
+        {
+            id : 1,
+            img : "/images/shoe3.png",
+            productName : 'Vantela Republic Low Black <br>Natural',
+            price : '159,000',
+            rating : '⭐ 4.5/5'
+        },
+        { id : 2,
+            img : "/images/shoe4.png",
+            productName : 'Vantela New Public <br> White low',
+            price :'299.990',
+            rating : '⭐ 4.5/5'
 
-<div class="footer-div">
-<div>
-         <p class="footer-title">Company</p>
-         <p class="footer-text"><a href="">About Us</p>
-         <p class="footer-text"><a href="">Our Store</p>
-         <p class="footer-text"><a href="">News</p>
+        },
+        {
+            id : 3,
+            img : "/images/shoe3.png",
+            productName : 'Vantela Republic Low Black <br>Natural',
+            disc : '600,000',
+            price : '205.000',
+            rating : '⭐ 4.5/5'
+        },
+        {
+            id : 4,
+            img : "/images/shoe-black.png",
+            productName : 'Vantela Republic Ethnic Low <br Black >Natural',
+            price : '415.000',
+            rating : '⭐ 4.5/5'
+        },
+        
+    ];
+    console.log(shoeDetails);
+    let shoeCard = document.getElementById('user-cards');
+    
+    shoeDetails.forEach(shoeDetail => {
+        console.log(shoeDetail.id);
+      
+        
+
+        const card = document.createElement('div');
+
+        card.innerHTML += `
+        
+        <div class="shoe-container">
+
+    <div class="first-shoe-container1">
+        <div class="shoe1">
+            <img src="${shoeDetail.img}" alt="" width="200">
+        </div>
+        <div class="product-name">
+            <p class="name">${shoeDetail.productName}</p>
+            <p class="price">Rp ${shoeDetail.price}</p>
+           <p class="rating">   ${shoeDetail.rating ? `<span>${shoeDetail.rating}</span>` : ''}</p>
+
+        </div>
+    </div>
 </div>
+        `   
+        
+        card.addEventListener('click', ()=>{
+            window.open(`productDetails.html?id=${shoeDetail.id}`, '_blank')
+        });
+let displays = document.getElementById('displays');
+        shoeCard.appendChild(card);
+      
      
-    <div >
-        <p class="footer-title">Help</p>
-        <p class="footer-text"><a href="#">FAQ</a></p>
-        <p class="footer-text"><a href="#">Help</a></p>
-        <p class="footer-text"><a href="#">Terms</a></p>
-</div>
+    });
 
-    <div>
-        <p class="footer-title">Social Media</p>
-        <p class="footer-text"><a href="#"> <i class="fa-brands fa-facebook" id="icon"></i> Facebook </a></p>
-        <p class="footer-text"><a href="#"><i class="fa-brands fa-tiktok" id="icon"></i> Tiktok </a></p>
-        <p class="footer-text"><a href="#"><i class="fa-brands fa-instagram" id="icon"></i> Instagram </a></p>
-    </div>
+const secondShoeDetails = [
+        {
+            id : 5,
+            img : "/images/max1.png",
+            disc : 'Disc 30%',
+            productName : 'Vantela Ethnic Low Black <br>Natural',
+            cancelledPrice : '300.000',
+            price : '159,800',
+            rating : '⭐ 4.5/5',
+        },
+        {   id : 6,
+            img : "/images/max2.png",
+            disc : 'Disc 35%',
+            productName : 'Vantela Ethnic Low Black <br>Natural',
+            cancelledPrice : '350.000',
+            price : '181.720',
+            rating : '⭐ 4.5/5'
+        },
+        { id : 7,
+            img : "/images/max3.png",
+            disc : 'Disc 40%',
 
-    <div>
-        <p class="footer-title">Contact</p>
-        <p class="footer-text">KinPlusz, Christore Complex, Ado-Ekiti</p>
-        <p class="footer-text">Phone: 07019222397</p>
-        <p class="footer-text">Mail:<a href="mailto:adminvantela@gmail.com">adminvantela@gmail.com</a></p>
+            productName : 'Vantela Republic Low Black <br>Natural',
+            cancelledPrice : '400.000',
+            price : '195.390',
+            rating : '⭐ 4.5/5'
+        },
+        { id : 8,
+            img : "/images/max4.png",
+            disc : 'Disc 30%',
+            productName : 'Vantela Ethnic Low  Black <br> Natural',
+            cancelledPrice : '450.000',
+            price : '182.390',
+            rating : '⭐ 4.5/5'
+        },
+];
+
+let secondShoe = document.getElementById('second-shoe-container');
+    
+secondShoeDetails.forEach(secondShoeDetail => {
+        console.log(secondShoeDetail);
+  
+        const cards = document.createElement('div');
+        let  display2 = document.getElementById('display2');
+
+        cards.innerHTML += `
+        
+<div class="shoe-container">
+
+    <div class="first-shoe-container1">
+         <button >${secondShoeDetail.disc ? `<span class="dis-btn">${secondShoeDetail.disc}</span>` : ''}</button>
+        <div class="shoe1">
+            <img src="${secondShoeDetail.img}" alt="" width="200">
+        </div>
+        <div class="product-name">
+            <p class="name">${secondShoeDetail.productName}</p>
+             <p class="cancel-div">${secondShoeDetail.cancelledPrice ? `<span class="cancelled-price">Rp- ${secondShoeDetail.cancelledPrice}</span>` : ''}</p>
+            <p class="price">Rp ${secondShoeDetail.price}</p>
+            <p class="rating">   ${secondShoeDetail.rating ? `<span>${secondShoeDetail.rating}</span>` : ''}</p>
+
+        </div>
     </div>
 </div>
-<div class="copyright">
-    <p class="right">Copyright &copy; 2024. All Right Reserved</p>
-</div>
-</footer>
+        `
+
+        cards.addEventListener('click', ()=>{
+
+            window.open(`productDetails.html?id=${secondShoeDetail.id}`, '_blank')
+        });
+        display2.appendChild(cards)
+    });
+
+    let returnUp = document.querySelector('.up')
+
+window.addEventListener('scroll', ()=>{
+    if(window.scrollY > 1000){
+        returnUp.style.display = 'block';
+    }else{
+        returnUp.style.display = 'none'
+   
+    }
+    console.log(window.scrollY);
+    
+});
+
+returnUp.addEventListener('click', ()=>{
+    window.scrollTo({
+        top:20,
+        behavior: 'smooth'
+    });
+});
+</script>
 </body>
 </html>
