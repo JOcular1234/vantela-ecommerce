@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet">
+    <title>E-commerce Project Page</title>
+    <!-- <link rel="stylesheet" href="contact.css" /> -->
+    <!-- <link rel="stylesheet" href="contactmediaquery.css" /> -->
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="mynavbar">
+      <div class="nav-link">
+      <div class="nav-container">
+        <div><a href="#">Help</a></div>
+        <div class="vertical-line"></div>
+        <div class="store"><a href="#">Store</a></div>
+      </div>
+    </div>
+    </nav>
+
+    <header class="header-container">
+      <div class="logovanila"><img src="/images/Frame183.png" alt="logo" /></div>
+      <div class="header-icons">
+        <div class="comments">
+          <a href=""><img src="/images/Group.png" alt="logo" /></a>
+        </div>
+        <div>
+          <a href=""><img src="/images/Frame91.png" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="/images/Frame90.png" alt="" /></a>
+        </div>
+        <div class="ahmad"><img src="/images/Frame92.png" alt="" /></div>
+      </div>
+      <div class="menu-icon">
+        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+        <svg
+          width="800px"
+          height="800px"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+        >
+          <path
+            fill="#000000"
+            fill-rule="evenodd"
+            d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"
+          />
+        </svg>
+      </div>
+
+  
+    </header>
+
+    <main class="main-container">
+      <div class="main-div">
+      <h1 class="heading">Contact us</h1>
+      <form action="" id="formInfo">
+        <div class="input-fill">
+          <div>
+            <label for="fullName" class="label-div"
+              >Full Name <span class="asterisk">*</span></label
+            ><br /><br />
+            <input
+              type="text"
+              placeholder="Aziz Sultan"
+              id="fullname"
+              name="fullName" class="input-con"
+              required
+            />
+            <span class="error-message" id="nameError"></span>
+          </div>
+          <div>
+            <label for="email" class="label-div ">Email <span class="asterisk">*</span></label
+            ><br /><br />
+            <input
+              type="email"
+              placeholder="inimal@mailcom"
+              id="email"
+              name="email" class="input-con email-input"
+              required
+            />
+          </div>
+        </div>
+        <div class="message">
+          <label for="message" class="label-div">Message</label><br /><br />
+          <textarea
+            type="text"
+            placeholder="Type your message here..."
+            rows="4"
+            columns="50"
+            id="message"
+            name="message"
+            required
+          ></textarea>
+
+        </div>
+        <label class="security-code label-div" for="security"
+          >Type security code <span class="asterisk" >*</span></label
+        ><br />
+        <input type="text" id="security" class="input-con"/><br />
+
+        <input type="text" class="empty input-con" id="captcha" name="captcha"  required />
+       
+        <button type="submit" id="sendBtn" name="submit" class="submit-btn">Send</button>
+       
+      </form>
+    </div>
+    </main>
+
+
+    <footer>
+      <div class="footer-logo">
+          <p class="vantela-logo">Vantela</p>
+          <span class="input-div">
+          <input type="email" placeholder="Subscribe to our Newsletter..." class="newsletter-input input-con" required>
+          <i class="fa-solid fa-angle-right" id="forward"></i>
+          </span>
+      </div>
+    
+      <div class="footer-div">
+      <div>
+               <p class="footer-title">Company</p>
+               <p class="footer-text"><a href="">About Us</p>
+               <p class="footer-text"><a href="">Our Store</p>
+               <p class="footer-text"><a href="">News</p>
+      </div>
+           
+          <div >
+              <p class="footer-title">Help</p>
+              <p class="footer-text"><a href="#">FAQ</a></p>
+              <p class="footer-text"><a href="#">Help</a></p>
+              <p class="footer-text"><a href="#">Terms</a></p>
+      </div>
+      
+          <div>
+              <p class="footer-title">Social Media</p>
+              <p class="footer-text"><a href="#"> <i class="fa-brands fa-facebook" id="icon"></i> Facebook </a></p>
+              <p class="footer-text"><a href="#"><i class="fa-brands fa-tiktok" id="icon"></i> Tiktok </a></p>
+              <p class="footer-text"><a href="#"><i class="fa-brands fa-instagram" id="icon"></i> Instagram </a></p>
+          </div>
+      
+          <div>
+              <p class="footer-title">Contact</p>
+              <p class="footer-text">KinPlusz, Christore Complex, Ado-Ekiti</p>
+              <p class="footer-text">Phone: 07019222397</p>
+              <p class="footer-text">Mail:<a href="mailto:adminvantela@gmail.com">adminvantela@gmail.com</a></p>
+          </div>
+      </div>
+      <div class="copyright">
+          <p class="right">Copyright &copy; 2024. All Right Reserved</p>
+      </div>
+      </footer>
+   
+    <script src="contact.js"></script>
+  </body>
+</html>
