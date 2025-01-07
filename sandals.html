@@ -33,12 +33,13 @@
              </label>
  
              <img src="images/vantela.png" alt="" width="100px" class="home-link"> 
- 
+             
              <a href="index.html" class="sandals-link">Home</a>
              <a href="#" class="sandals-link">Slip On</a>
              <a href="sandals.html" class="sandals-link"><span >Sandals</span></a>
              <a href="contactform.html">Contact</a>
              <a href="#" class="sandals-link">Other</a>
+          
          <div class="icon-div">
             <span class="commenting">
                 <i class="fa-regular fa-comment-dots"></i>        
@@ -54,7 +55,9 @@
                     <span class="cart-count" id="cart-count">0</span>
                 </div>
             </div>
+        
          </div>
+       
          <div class="sign-btn">
              <button class="sign-up-btn">Sign Up</button>
              <button class="sign-in-btn">Sign In</button>
@@ -118,11 +121,7 @@
 <!-- 6th -->
  </div>
 
-<div class="arr-container">
-   <div class="up">
-    <span class="span-icon">&#8679;</span>
-   </div>
-   </div>
+
 
      <!--MEN'S SANDALS SEE MORE -->
 <div class="seemore-div">
@@ -153,7 +152,11 @@
                 <p class="footer-text"><a href="#">Help</a></p>
                 <p class="footer-text"><a href="#">Terms</a></p>
         </div>
-        
+        <div class="arr-container">
+            <div class="up">
+             <span class="span-icon">&#8679;</span>
+            </div>
+            </div>
             <div>
                 <p class="footer-title">Social Media</p>
                 <p class="footer-text"><a href="#"> <i class="fa-brands fa-facebook" id="icon"></i> Facebook </a></p>
@@ -216,7 +219,7 @@
         <div class="shoe-container">
 
     <div class="first-shoe-container1">
-        <button >${shoeDetail.disc ? `<span class="dis-btn">${shoeDetail.disc}</span>` : ''}</button>
+        ${shoeDetail.disc ? `<span class="dis-btn">${shoeDetail.disc}</span>` : ''}
         <div class="shoe2">
             <img src="${shoeDetail.img}" alt="" width="200">
         </div>
@@ -574,7 +577,7 @@ secondKidSandals.forEach(secondKidSandal => {
     let returnUp = document.querySelector('.up')
 
 window.addEventListener('scroll', ()=>{
-    if(window.scrollY > 1600){
+    if(window.scrollY > 2000){
         returnUp.style.display = 'block';
     }else{
         returnUp.style.display = 'none'

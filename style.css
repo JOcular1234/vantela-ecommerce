@@ -150,8 +150,8 @@
     border: 1px solid;
     cursor: pointer;
   }
-  
-  @media (max-width:700px) {
+
+  @media (max-width:799px) {
   .links-container{
     flex-direction: column;
     align-items: flex-start;
@@ -159,12 +159,18 @@
     top: 0;
     right: -100%;
     z-index: 10;
-    width: 100%;
+    width: 50%;
     background-color: var(--back-color);
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
     transition: 0.75s ease-out;
+    
   }
-  
+  .vectors{
+    width: 30px;
+  }
+ .ahmad img{
+  margin-left: -30px;
+}
   nav a{
     box-sizing: border-box;
     height: auto;
@@ -180,7 +186,7 @@
     right: 0;
   }
   #sidebar-active:checked ~ #overlay{
-    background-color: var(--gray2);
+    background-color: rgba(0, 0, 0, 0.1);
     height: 100%;
     width: 100%;
     position: fixed;
@@ -467,7 +473,6 @@ justify-content: center;
 padding: 16px; 
 padding: 20px;
 }
-
 .first-shoe-container1{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -529,15 +534,6 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .shoe1 img:hover{
 transform: scale(1.1);
-}
-
-.shoe-container {
-display: flex;
-flex-wrap: wrap;
-gap: 30px;
-justify-content: center;
-padding: 16px; 
-padding: 20px;
 }
 
 .product-name{
@@ -709,14 +705,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 transform: scale(1.1);
 }
 
-.shoe-container {
-display: fle;
-flex-wrap: wrap;
-gap: 30px;
-justify-content: center;
-padding: 16px; 
-padding: 20px;
-}
+
 .ratings{
 margin: 10px;
 margin-top: -10px;
@@ -869,6 +858,7 @@ text-decoration: line-through;
 }
 .description{
   margin: 20px;
+  color: rgb(55, 54, 54);
 }
 .active {
 color: #fff;
@@ -879,6 +869,14 @@ display: flex;
 gap: 20px;
 justify-content: end;
 font-size: 30px;
+color: #000;
+}
+.share-heart:nth-child(1) :hover{
+  color: var(--Yellow);
+  cursor: pointer;
+}
+#share-icon{
+
 }
 .cart-icon {
   font-size: 20px;
@@ -893,14 +891,29 @@ font-size: 30px;
   padding: 2px 6px;
   /* font-size: 12px; */
 }
+.cart-counter{
+  position: absolute;
+  top: 2px;
+  background-color: var(--cart-yellow);
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
 
-@media (max-width:700px) {
+@media (max-width:799px) {
   .cart-count{
     position: absolute; 
-  top: 570px; 
+  top: 530px; 
+}
+.cart-counter{
+  position: absolute; 
+  top: 470px; 
 }
 }
-
+.ahmad{
+  margin-left: 30px;
+  
+}
   footer{
     background-color: var(--blue);
   }

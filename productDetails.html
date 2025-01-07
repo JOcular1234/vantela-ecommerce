@@ -11,17 +11,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     
         <title>Details</title>
-    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet">
+        <title>E-commerce Project Page</title>
+        <!-- <link rel="stylesheet" href="contact.css" /> -->
+        <!-- <link rel="stylesheet" href="contactmediaquery.css" /> -->
+        <link rel="stylesheet" href="style.css">
     <style>
 
     </style>
 </head>
 <body>
 <!-- nav -->
-<nav>
+ <nav>
     <img src="images/vantela.png" alt="" width="100px" class="home-link home-links van-logo">
        
 
@@ -44,21 +49,75 @@
         <a href="#" class="sandals-link">Other</a>
         
     <div class="icon-div">
-        <img src="images/Vector.png" alt=""     class="vectors">
-        <img src="images/Vector1.png" alt="" class="vectors">
-       
+        <!-- <img src="images/Vector.png" alt=""     class="vectors"> -->
+         <img src="images/Group.png" alt="" class="vectors">
+        <!-- <img src="images/Vector1.png" alt="" class="vectors"> -->
+        <img src="images/Frame91.png" alt="" class="vectors">
   
         <div class="cart-mobile cart-mobiles">
             <div class="cart" id="cart">
-                <span class="cart-icon"><img src="images/Vector2.png" alt="" class="cart-icon-img"></span>
-                <span class="cart-count" id="cart-count">0</span>
+                <span class="cart-icon">
+                    <img src="images/Vector2.png" alt="" class="cart-icon-img"></span>
+                <span class="cart-counter" id="cart-count">0</span>
             </div>
         </div>
+        <div class="ahmad"><img src="images/Frame92.png" alt="" /></div>
+      </div>
     </div>
    
     </div>
     
 </nav>
+
+
+
+<!-- 
+<nav class="mynavbar">
+  <div class="nav-link">
+  <div class="nav-container">
+    <div><a href="#">Help</a></div>
+    <div class="vertical-line"></div>
+    <div class="store"><a href="#">Store</a></div>
+  </div>
+</div>
+</nav>
+<header class="header-container">
+    <div class="logovanila"><img src="images/Frame183.png" alt="logo" /></div>
+    <div class="header-icons">
+      <div class="comments">
+        <a href=""><img src="images/Group.png" alt="logo" /></a>
+      </div>
+      <div>
+        <a href=""><img src="images/Frame91.png" alt="" /></a>
+      </div>
+      <div>
+        <a href=""><img src="images/Frame90.png" alt="" /></a>
+      </div>
+      
+
+      <div class="ahmad"><img src="images/Frame92.png" alt="" /></div>
+    </div>
+    <div class="menu-icon">
+      <?xml version="1.0" encoding="utf-8"?>
+      <svg
+        width="800px"
+        height="800px"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+      >
+        <path
+          fill="#000000"
+          fill-rule="evenodd"
+          d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"
+        />
+      </svg>
+    </div>
+
+
+  </header> -->
+
+
 
     <div id="shoe-details">
 
@@ -71,6 +130,7 @@
        
         <i class="fa fa-spinner fa-spin fa-3x" aria-hidden="true"></i>
         </div>
+       
     <script>
         // spinner
         window.addEventListener('load',()=>{
@@ -329,7 +389,7 @@ console.log(shoeDetails);
         
         <div class="details-container">
             
-<div class="share-heart"><span><i class="fa-regular fa-heart"></i></span> <span><i class="fa-solid fa-share-nodes"></i></span></div>
+<div class="share-heart"><span><i class="fa-regular fa-heart"></i></span> <span id="share-icon"><i class="fa-solid fa-share-nodes"></i></span></div>
         <h2 class="product-details-name">${shoeDetail.productName}</h2>
 <p class="cancel-div">${shoeDetail.cancelledPrice ? `<span class="cancelled-price-cart">Rp- ${shoeDetail.cancelledPrice}</span>` : ''}</p>
         <p class="main-price">Rp ${shoeDetail.price}</p>
@@ -360,29 +420,39 @@ Min. Order: 1 Piece <br>
 Showcase: All Showcase<br>
 Republic Series<br>
 
-GENERAL SPECIFICATIONS<br>
-​color : Black Natural<br>
+<p style="margin:20px">GENERAL SPECIFICATIONS <br>
+ ​color : Black Natural<br>
 size : 36 - 45 (UNISEX) <br>
+   
+    </P>
 
-MATERIALS:<br>
 
-UPPER: 12 oz canvas<br>
+<p style="margin:20px">
+    MATERIALS:<br>
+   UPPER: 12 oz canvas<br>
 THREAD : nylon<br>
 EYELETS: silver aluminum + ring<br>
 INSOLE: ultralite foam<br>
 FOXING : rubber<br>
 OUTSOLE: rubber<br>
-STRIPE: semi-leather<br>
+STRIPE: semi-leather<br> 
+    </P>
 
-100% ORIGINAL BNIB item (Brand New in Box).<br>
+
+
+<p style="margin:20px">
+   100% ORIGINAL BNIB item (Brand New in Box).<br>
 NOT ORIGINAL GUARANTEED Money Back.<br>
 
 Size variants are always updated, if the size can be <br> clicked/selected it means READY.<br>
 Using good quality material, very soft, and has strong <br> durability so it is suitable for use every day.<br>
 The insole is soft and safe so that your feet don't <br>get sore easily.<br>
-Good stitching makes shoes look good, strong, safe and <br>durable.<br>
+Good stitching makes shoes look good, strong, safe and <br>durable.<br> 
+</P>
 
-CHART SIZE:<br>
+
+<p style="margin:20px">
+    CHART SIZE:<br>
 SIZE 36= 23.3 cm<br>
 SIZE 37= 23.9 cm<br>
 SIZE 38= 24.7 cm<br>
@@ -393,12 +463,17 @@ SIZE 42= 27.4 cm<br>
 SIZE 43= 28.3 cm<br>
 SIZE 44= 28.8 cm<br>
 SIZE 45= 29.3 cm<br>
+</P>
+<p style="margin:20px">
 MEASUREMENT Method:<br>
 
 Foot length (Hump to Toe) then adjust to the size <br>chart above.<br>
 Not Accepting Change Size,<br>
-THANK YOU for always loving DOMESTIC PRODUCTS.</p>
+THANK YOU for always loving DOMESTIC PRODUCTS.
+    </P>
+</p>
 
+<p style="text-align:center; margin:0 auto;">Copyright &copy; 2025 Vantela E-commerce</p>    
 
    `
     }else{
@@ -416,6 +491,21 @@ function toggleColor(button) {
   activeButton = button;
 };
 
+// share icon
+let share = document.getElementById('share-icon');
+
+share.addEventListener('click', () => {
+    try{
+        navigator.share({
+           
+            url: window.location.href,
+        })
+        console.log(share);
+        
+    }catch (error) {
+            alert('failed to share! try again');
+    }
+});
 
 
 let cartCount = 0;
@@ -444,6 +534,5 @@ function updateCartCount() {
 
     </script>
 
-    
-</body>
+ </body>
 </html>
