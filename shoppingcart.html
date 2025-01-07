@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>shopping cart</title>
+    <style>
+        .parent-container{
+    display: flex;
+    width: 700px;
+  }
+  .parent-container2{
+    display: flex;
+    width: 700px;
+
+  }
+  .product-container{
+    display: flex;
+    gap: 40px;
+    margin-bottom: -30px;
+  }
+  .product-details-div{
+    padding: 5px;
+  }
+  .product-details-div2{
+    padding: 5px;
+    width: 395px; 
+  }
+  .disc{
+    background-color: rgb(245, 210, 9);
+    border: none;
+    width: 80px;
+    border-radius: 40px;
+  }
+  .cancelled-price{
+    text-decoration:line-through;
+    color: gray;
+  }
+  .minus{
+    border-radius: 50px;
+    cursor: pointer;
+    border: 1px solid #1f3e97;
+  }
+  .add{
+    border: 1px solid #1f3e97;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .price-div{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .myShoeimg{
+    padding: 20px ;
+  }
+  .product-name-carts{
+    font-family: inter;
+    font-weight: 500;
+    font-size: 20px;
+}
+.shopping-cancelled-price{
+    font-size: 12px;
+    font-weight: 300;
+    font-family: inter;
+    text-decoration: line-through;
+    color: #858585;
+}
+.shopping-main-price{
+    font-size:16px;
+    font-family: inter;
+    font-weight: 600;
+    color: #1f3e97;
+}
+.btn-div{
+    margin-top: 20px;
+}
+.add-minus-span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1f3e97;
+}
+.add-note{
+    color: #1f3e97;
+    font-size: 12px;
+}
+.order-summary{
+    width: 40%;
+}
+.section-shopping-cart{
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+    width: 700px;
+}
+.main-cont{
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+}
+.orders-sub{
+            font-family: inter;
+            font-weight: 500;
+            font-size: 20px;
+            color: #1f3e97;
+
+        }
+        .order-summary{
+            border: 1px solid gainsboro;
+            background-color: #fff;
+            max-width: 20%;
+            height: 350px;
+            margin-top: 100px;
+            border-radius: 10px;
+        }
+        .pro-code{
+            font-weight: 600;
+            font-family: inter;
+            font-size: 12px;
+            color: #1f3e97;
+
+        }
+        .apply-div{
+            border: 1px solid;
+            padding: 10px;
+            display: flex;
+            gap: 20px;
+            width: 90%;
+            background-color: #dfdddd;
+            border: none;
+            border-radius: 6px;
+            justify-content: center;
+        }
+        .apply-div input{
+            padding: 6px;
+            color: #1f3e97;
+            display: flex;
+            outline: none;
+            background-color: #dfdddd;
+            border: none;
+        }
+        .app-sub{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1f3e97;
+            border: none;
+            width: 50px;
+            color: aliceblue;
+            font-weight: 600;
+            font-family: inter;
+        }
+        .price-div-summary{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: -30px;
+            color: #1f3e97;
+
+        }
+        .subtotal-div{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: -30px;
+            color: #1f3e97;
+
+        }
+        .total-div{
+            display: flex;
+            justify-content: space-between;
+            margin-top: -30px;
+            color: #1f3e97;
+        }
+      @media (max-width:799px) {
+            .main-cont{
+                flex-direction: column;
+            }
+            .order-summary{
+            border: 1px solid;
+            background-color: antiquewhite;
+            max-width: 40%;  
+            margin: 0 auto; 
+            margin-top: 50px;
+            }
+      }
+
+.mynavbar{
+  display: flex;
+  padding: 5px;
+  width: 100%;
+  justify-content: flex-end;
+  background-color: #F1F1F1;
+}
+.nav-container{
+  display: flex;
+  padding: 5px;
+  font-weight: 400;
+  text-decoration: none;
+
+}
+
+.mynavbar div {
+  margin-right: 0.5rem;
+}
+.vertical-line {
+  border-left: 2px solid rgb(154, 149, 149);
+  height: 1.1rem;
+}
+.mynavbar a {
+  text-decoration: none;
+  color: gray;
+  font-family: Inter;
+  font-size: 0.75rem;
+}
+
+header {
+  width: 78.2rem;
+  height: 7.5rem;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-icon {
+  display: none;
+}
+
+svg {
+  width: 24px;
+}
+.header-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9rem;
+  margin-top: 20px;
+}
+.header-container{
+  width: 100%;
+}
+.logovanila{
+  /* margin-top: 30px; */
+  display: flex;
+  align-items: center;
+  margin: 50px ;
+}
+.heading {
+  font-family: Inter;
+  font-size: 2rem; 
+  font-weight: 500;
+  line-height: 2.4rem;
+  color: rgba(70, 70, 70, 1);
+  margin: 0px ;
+  position: relative;
+  left: 170px;
+  width: 200px;
+}
+    </style>
+</head>
+<body>
+
+    <nav class="mynavbar">
+        <div class="nav-link">
+        <div class="nav-container">
+          <div><a href="#">Help</a></div>
+          <div class="vertical-line"></div>
+          <div class="store"><a href="#">Store</a></div>
+        </div>
+      </div>
+      </nav>
+  
+      <header class="header-container">
+        <div class="logovanila"><a href="index.html"><img src="/images/Frame183.png" alt="logo" /></a></div>
+        <div class="header-icons">
+          <div class="comments">
+            <img src="/images/Group.png" alt="logo" />
+          </div>
+          <div>
+            <a href=""><img src="/images/Frame91.png" alt="" /></a>
+          </div>
+          <div>
+            <a href=""><img src="/images/Frame90.png" alt="" /></a>
+          </div>
+          <div class="ahmad"><img src="/images/Frame92.png" alt="" /></div>
+        </div>
+        <div class="menu-icon">
+          <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+          <svg
+            width="800px"
+            height="800px"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+          >
+            <path
+              fill="#000000"
+              fill-rule="evenodd"
+              d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"
+            />
+          </svg>
+        </div>
+      </header>
+  
+<div class="main-cont">    
+    <section class="section-shopping-cart">
+    <div class="parent-container">
+        <div class="myShoeimg">
+          <img src="images/image2.png" alt="myShoe">
+        </div>
+        <div class="product-details-div">
+        <div class="product-container">
+          <p class="product-name-carts">Vantela Republic Low Black Gum</p>
+          <p ><button class="disc">50%</button></p>
+          </div>
+          <div class="price-div">
+            <p class="shopping-cancelled-price">Rp 200.000</p>
+            <p class="shopping-main-price">Rp 149.995</p>
+          </div>
+        </div>
+        <div class="btn-div">
+            <span class="add-minus-span">
+          <button class="minus">-</button><span class="txt">0</span><button class="add">+</button>
+        </span>
+          <div>
+            <p class="add-note"> Add note... <span>|</span> <i class="fa-solid fa-trash"></i></p>
+         </div>
+        </div>
+        
+      </div>
+      <!-- 2 -->
+    <div class="parent-container2">
+        <div class="myShoeimg">
+          <img src="images/6fb73ba9-de51-4ad0-9e4d-429f3f25bd84 (1).png" alt="myShoe">
+        </div>
+        <div class="product-details-div2">
+        <div class="product-container">
+          <p class="product-name-carts">Vantela Oldschool Strip sock</p>
+          </div>
+          <div class="price-div">
+            <p class="shopping-main-price">Rp 8.000</p>
+          </div>
+        </div>
+        <div class="btn-div">
+            <span class="add-minus-span">
+          <button class="minus" id="minus1">-</button><span class="txt" id="txt1">0</span><button class="add" id="add1">+</button>
+        </span>
+          <div>
+            <p class="add-note"> Add note... <span>|</span> <i class="fa-solid fa-trash"></i></p>
+         </div>
+        </div>
+        
+      </div>
+    <div class="parent-container2">
+        <div class="myShoeimg">
+          <img src="images/sg-11134201-7rbnl-llltr6uks7bxe4.png" alt="myShoe">
+        </div>
+        <div class="product-details-div2">
+        <div class="product-container">
+          <p class="product-name-carts">Vantela Man Slide sandals ...</p>
+          </div>
+          <div class="price-div">
+            <p class="shopping-main-price">Rp 79.900</p>
+          </div>
+        </div>
+        <div class="btn-div">
+            <span class="add-minus-span">
+          <button class="minus" id="minus2">-</button><span class="txt" id="txt2">0</span><button class="add" id="add2">+</button>
+        </span>
+          <div>
+            <p class="add-note"> Add note... <span>|</span> <i class="fa-solid fa-trash"></i></p>
+         </div>
+        </div>
+        
+      </div>
+    <div class="parent-container">
+        <div class="myShoeimg">
+          <img src="images/7fa70f4b-9a6f-47ea-9992-048865ba4b08.png" alt="myShoe">
+        </div>
+        <div class="product-details-div">
+        <div class="product-container">
+          <p class="product-name-carts">Vantela Ethnic Low Black Natural</p>
+          <p ><button class="disc">50%</button></p>
+          </div>
+          <div class="price-div">
+            <p class="shopping-cancelled-price">Rp 200.000</p>
+            <p class="shopping-main-price">Rp 149.995</p>
+          </div>
+        </div>
+        <div class="btn-div">
+            <span class="add-minus-span">
+          <button class="minus" id="minus3">-</button><span class="txt" id="txt3">0</span><button class="add" id="add3">+</button>
+        </span>
+          <div>
+            <p class="add-note"> Add note... <span>|</span> <i class="fa-solid fa-trash"></i></p>
+         </div>
+        </div>
+        
+      </div>
+    <div class="parent-container2">
+        <div class="myShoeimg">
+          <img src="images/d3ac95caaa0a9d9c96d816a468b6996a.png" alt="myShoe">
+        </div>
+        <div class="product-details-div2">
+        <div class="product-container">
+          <p class="product-name-carts">Vantela New Public White low</p>
+          </div>
+          <div class="price-div">
+            <p class="shopping-main-price">Rp 149.995</p>
+          </div>
+        </div>
+        <div class="btn-div">
+            <span class="add-minus-span">
+          <button class="minus" id="minus4">-</button><span class="txt" id="txt4">0</span><button class="add" id="add4">+</button>
+
+        </span>
+          <div>
+            <p class="add-note"> Add note... <span>|</span> <i class="fa-solid fa-trash"></i></p>
+         </div>
+        </div>
+        
+      </div>
+    </section>
+ 
+
+      <div class="order-summary">
+        <p class="orders-sub">Order Summary</p>
+        <h5 class="pro-code">Promo Code</h5>
+        <div class="apply-div">
+            <input type="text" placeholder="Enter promo code...">
+            <button class="app-sub">Apply</button>
+        </div>
+        <div class="price-div-summary">
+            <h5>item: 1</h5>
+            <h5>Rp 149.995</h5>
+        </div>
+        <div class="subtotal-div">
+            <h5>Subtotal:</h5>
+            <h5>Rp 149.995</h5>
+        </div>
+        <div class="promo-div">
+            <h4>Promo:</h4>
+
+        </div>
+        <div class="total-div">
+            <h5>Total:</h5>
+            <h5>Rp 149.995</h5>
+        </div>
+        <style>
+            .check-btn{
+    background-color: #1f3e97;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-family: inter;
+    color: #fff;
+    width: 3px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    min-width: 92%;
+    display: inline-block;
+}
+.check-btn:hover{
+    border: 1px solid;
+    background-color: transparent;
+    color: #1f3e97;
+    transition: all .5s;
+}
+        </style>
+<a class="check-btn" href="payment.html" >Checkbox</a>
+    <!-- <button class="check-btn">checkbox</button> -->
+      </div>
+</div> 
+      <script>
+        // see i have added javaScript for you. create a js file and paste this: 
+        
+        let addBtn = document.querySelector('.add')
+        let minusBtn = document.querySelector('.minus');
+        let txt = document.querySelector('.txt');
+
+let counter = 0;
+        addBtn.addEventListener('click', ()=>{
+            counter++;
+            console.log(counter);
+            txt.innerHTML = counter;
+           
+        });
+        minusBtn.addEventListener('click', ()=>{
+           if(counter >0){
+            counter--;
+            console.log(counter);
+            txt.innerHTML = counter;
+       
+          
+           }
+        });
+
+        let addBtns = document.getElementById('add1')
+        let minusBtns = document.getElementById('minus1');
+        let txts = document.getElementById('txt1');
+
+let counters = 0;
+        addBtns.addEventListener('click', ()=>{
+            counters++;
+            console.log(counters);
+            txts.innerHTML = counters;
+           
+        });
+        minusBtns.addEventListener('click', ()=>{
+           if(counters >0){
+            counters--;
+            console.log(counters);
+            txts.innerHTML = counters;
+       
+          
+           }
+        });
+
+        let addBtns2 = document.getElementById('add2')
+        let minusBtns2 = document.getElementById('minus2');
+        let txts2 = document.getElementById('txt2');
+
+let counters2 = 0;
+        addBtns2.addEventListener('click', ()=>{
+            counters2 ++;
+            console.log(counters2);
+            txts2.innerHTML = counters2;
+           
+        });
+        minusBtns2.addEventListener('click', ()=>{
+           if(counters2 >0){
+            counters2--;
+            console.log(counters2);
+            txts2.innerHTML = counters2;
+       
+          
+           }
+        });
+
+        let addBtns3 = document.getElementById('add3')
+        let minusBtns3 = document.getElementById('minus3');
+        let txts3 = document.getElementById('txt3');
+
+let counters3 = 0;
+        addBtns3.addEventListener('click', ()=>{
+            counters3 ++;
+            console.log(counters3);
+            txts3.innerHTML = counters3;
+           
+        });
+        minusBtns3.addEventListener('click', ()=>{
+           if(counters3 >0){
+            counters3 --;
+            console.log(counters3);
+            txts3.innerHTML = counters3;
+       
+          
+           }
+        });
+
+
+        let addBtns4 = document.getElementById('add4')
+        let minusBtns4 = document.getElementById('minus4');
+        let txts4 = document.getElementById('txt4');
+
+let counters4 = 0;
+        addBtns4.addEventListener('click', ()=>{
+            counters4 ++;
+            console.log(counters4);
+            txts4.innerHTML = counters4;
+           
+        });
+        minusBtns4.addEventListener('click', ()=>{
+           if(counters4 >0){
+            counters4 --;
+            console.log(counters4);
+            txts4.innerHTML = counters4;
+           }
+        });
+
+
+        
+      </script>
+</body>
+</html>
