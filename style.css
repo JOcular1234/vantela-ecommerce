@@ -33,8 +33,37 @@
     --Gray-mobile:#F7F6FE;
     --White-mobile: #FEFEFE;
     --Light-Blue: linear gradient (to right, #EBF5FE, #F6FAFF);
-  }
+
+
+    --color-1: #0f1016;
+    --text-color: #f0f0f0;
+    --accent-color: #006aff;
+    --back-color: #dbeaff;
+    --btn-color: #007bff;
   
+    --Gray1: #f1f1f1;
+    --gray2: #f3f3f3;
+    --gray3: #f4f4f4;
+    --blue: #1f3e97;
+    --Deep-Blue: #18378f;
+    --red: #ea1c0f;
+    --Gray-Text: #858585;
+    --Yellow: #ffb500;
+    --green1: #06a73d;
+    --green2: #07892f;
+    --white: #ffffff;
+  
+    /* MOBILE VARIABLES */
+  
+    --Gray-mobile: #f7f6fe;
+    --White-mobile: #fefefe;
+    --Light-Blue: linear gradient (to right, #ebf5fe, #f6faff);
+  }
+  .pacifico-regular {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
   html{
     font-size: 12pt;
     font-family: inter;
@@ -1464,4 +1493,184 @@ footer{
   }
 }
 
+}
+
+
+
+/* PAYMENT */
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: inter;
+  font-weight: 17px;
+}
+.container > div {
+  flex: 100%;
+}
+.v-profile {
+  border: 1px solid var(--color-1);
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+}
+ 
+.Main > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.payment {
+  display: flex;
+  justify-content: le;
+  align-items: center;
+  min-height: 50px;
+  border-radius: 1px;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 1em;
+}
+ /* Main Shopping Section */
+  
+ .main-side {
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+.redstar {
+  color: var(--red);
+}
+
+.main-side > div {
+  flex: 100%;
+  flex: 1;
+}
+.mainShipping {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid gray;
+
+  padding: 16px;
+}
+  
+.ship-tab {
+  border-radius: 8px;
+  height: 30px;
+  width: 500px;
+  font-size: 14px;
+  margin-top: 10px;
+  background-color: var(--gray2);
+  color: black;
+  outline: none;
+  border: none;
+}
+.ship-mintab {
+  border-radius: 8px;
+  margin-bottom: 10px;
+  height: 30px;
+  width: 210px;
+  font-size: 14px;
+  background-color: var(--gray2);
+  color: black;
+  border: none;
+  outline: none;
+}
+.sideShipping {
+  display: flex;
+  border: 1px solid gray;
+  flex-wrap: wrap;
+  padding: 10px;
+  color: var(--blue);
+}
+.express{
+  color: var(--blue);
+}
+.address{
+  color: var(--blue);
+  font-size: 14;
+  font-weight: 600;
+}
+.cost-breakdown {
+  margin: 8px;
+  margin-bottom: 10px;
+
+}
+
+.city-container{
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+@media (max-width:650px) {
+  .main-side{
+    flex-direction: column;}
+  .city-container{
+    flex-direction: column;
+  }
+}
+.city-section{
+  display: flex;
+  justify-content: space-between;
+  outline: none;
+  /* margin-top: 40px; */
+}
+.city-txt{
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--blue);
+  font-family: inter;
+}
+.state-txt{
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--blue);
+  font-family: inter;
+
+}
+.City-select{
+  width: 200px;
+  height: 30px;
+  outline: none;
+  background-color: var(--gray2);
+  border: none;
+  border-radius: 5px;
+  font-family: inter;
+
+}
+.province-select{
+  width: 250px;
+  height: 30px; 
+  outline: none;
+  background-color: var(--gray2);
+  border: none;
+  font-family: inter;
+
+  border-radius: 5px;
+}
+.postal-section{
+  margin-top: 40px;
+  font-family: inter;
+
+}
+.total-span{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-family: inter;
+  margin-top: 20px;
+
+}
+.checkout-btn{
+  background-color: var(--blue);
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-family: inter;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 20px;
+  border-radius: 8px;
 }
