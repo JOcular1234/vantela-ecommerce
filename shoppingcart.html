@@ -126,10 +126,10 @@
         }
         .apply-div{
             border: 1px solid;
-            padding: 10px;
+            padding: 5px;
             display: flex;
-            gap: 20px;
-            width: 90%;
+            /* gap: 20px; */
+            /* width: 90%; */
             background-color: #dfdddd;
             border: none;
             border-radius: 6px;
@@ -142,6 +142,21 @@
             outline: none;
             background-color: #dfdddd;
             border: none;
+        }
+        @media (max-width:450px) {
+            .apply-div input{
+                width: 100px;
+            }
+            .order-summary{
+            border: 1px solid;
+            margin: 0 auto; 
+            margin-top: 50px;
+            }
+            .check-btn{
+    margin-top: -50px;
+    min-width: 10%;
+    display: inline-block;
+}
         }
         .app-sub{
             display: flex;
@@ -180,11 +195,15 @@
             }
             .order-summary{
             border: 1px solid;
-            background-color: antiquewhite;
+            background-color: #fff;
             max-width: 40%;  
             margin: 0 auto; 
             margin-top: 50px;
             }
+            .check-btn{
+    min-width: 10%;
+    display: inline-block;
+}
       }
 
 .mynavbar{
@@ -258,6 +277,31 @@ svg {
   position: relative;
   left: 170px;
   width: 200px;
+}
+.check-btn{
+    background-color: #1f3e97;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-family: inter;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    min-width: 100%;
+    display: inline-block;
+}
+.check-btn:hover{
+    border: 1px solid;
+    background-color: transparent;
+    color: #1f3e97;
+    transition: all .5s;
+}
+.check-btn-p{
+    margin: 0 auto;  
+    min-width: 90%;
+    display: inline-block;
 }
     </style>
 </head>
@@ -449,36 +493,14 @@ svg {
             <h5>Total:</h5>
             <h5>Rp 149.995</h5>
         </div>
-        <style>
-            .check-btn{
-    background-color: #1f3e97;
-    border: none;
-    padding: 10px;
-    text-align: center;
-    font-family: inter;
-    color: #fff;
-    width: 3px;
-    font-weight: 600;
-    text-decoration: none;
-    margin-top: 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    min-width: 92%;
-    display: inline-block;
-}
-.check-btn:hover{
-    border: 1px solid;
-    background-color: transparent;
-    color: #1f3e97;
-    transition: all .5s;
-}
-        </style>
-<a class="check-btn" href="payment.html" >Checkbox</a>
-    <!-- <button class="check-btn">checkbox</button> -->
+    <p class="check-btn-p"><a class="check-btn" href="payment.html" >Checkbox</a></p>
+    </div>
+
+   
       </div>
 </div> 
       <script>
-        // see i have added javaScript for you. create a js file and paste this: 
+       
         
         let addBtn = document.querySelector('.add')
         let minusBtn = document.querySelector('.minus');
