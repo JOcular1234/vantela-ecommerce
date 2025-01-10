@@ -936,6 +936,14 @@ color: #000;
   border-radius: 50%;
   padding: 2px 6px;
 }
+.cart-counters{
+  position: absolute;
+  top: 2px;
+  background-color: var(--cart-yellow);
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
 
 @media (max-width:799px) {
   .cart-count{
@@ -943,6 +951,14 @@ color: #000;
   top: 530px; 
 }
 .cart-counter{
+  position: absolute; 
+  top: 470px; 
+}
+  #cart-counts{
+    position: absolute; 
+  /* top: 530px;  */
+}
+.cart-counters{
   position: absolute; 
   top: 470px; 
 }
